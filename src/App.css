@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.Montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
 @font-face {
   font-family: "BerlinSans";
   src: url("./assets/Berlin_Sans_FB_Regular.ttf") format("woff2"),
@@ -24,11 +27,18 @@
     clip-path: polygon(0 19%, 87% 20%, 100% 47%, 100% 100%, 18% 100%, 0 79%);
     z-index: 50;
 }
-.img{
+.imgHome{
   background-image: url("./assets/backgroundHome.svg");
   background-repeat: no-repeat;
   background-size:contain;
   z-index: -100;
 }
+.imgAbout {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("./assets/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
 
 

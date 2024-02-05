@@ -36,7 +36,7 @@ export default function Counter() {
   return (
     <>
       <div className="relative flex justify-center font-[BerlinSans] w-screen z-20">
-        <div className="flex m-auto  lg:gap-16 gap-8">
+        <div className="flex m-auto lg:gap-10 xl:gap-16 gap-8">
           {arr.map((item, index) => {
             return (
               <>
