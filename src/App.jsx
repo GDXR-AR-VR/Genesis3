@@ -3,13 +3,14 @@ import About from "./pages/about";
 import "./App.css";
 import Home from "./pages/home";
 import Prizes from "./pages/prizes";
-
+import Navbar from "./components/navbar";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
       <div className="flex-col">
+        <Navbar />
         <Home />
 
         <About />

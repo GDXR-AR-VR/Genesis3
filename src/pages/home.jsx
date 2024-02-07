@@ -18,7 +18,10 @@ export default function Home() {
     };
   }, []);
   return (
-    <div className="home h-screen flex-col justify-center items-center align-middle text-white text-center imgHome ">
+    <div
+      id="Home"
+      className="home h-screen flex-col justify-center items-center align-middle text-white text-center imgHome "
+    >
       <img
         src={background}
         className="w-full absolute -top-10 drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)] z-10"

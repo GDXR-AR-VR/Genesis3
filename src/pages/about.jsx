@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   return (
-    <div className="about flex justify-center bg-gradient-to-t from-black to-transparent items-center align-middle text-white text-center bg-black imgAbout z-10 lg:-mt-3 2xl:mt-52 xl:mt-0">
+    <div id="About" className="about flex justify-center bg-gradient-to-t from-black to-transparent items-center align-middle text-white text-center bg-black imgAbout z-10 lg:-mt-3 2xl:mt-52 xl:mt-0">
       <div className=" w-1/2 relative flex justify-center">
         <img
           src={micheal}

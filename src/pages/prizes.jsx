@@ -4,7 +4,10 @@ export default function Prizes() {
   const dropShadow = "drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)]";
   return (
     <>
-      <div className="about relative flex justify-center font-[Pricedown] bg-black items-center imgAbout align-middle text-white text-center lg:-mt-3 xl:mt-0">
+      <div
+        id="Prize"
+        className="about relative flex justify-center font-[Pricedown] bg-black items-center imgAbout align-middle text-white text-center lg:-mt-3 xl:mt-0"
+      >
         <div className="flex w-full h-screen bg-black">
           <div className="flex-col w-10/12 bg-white ">
             <div className="bg-black flex  text-red-500 p-4  top-0 xl:text-8xl text-6xl w-full align-middle justify-center items-center rounded-br-[40px] lg:h-36">
