@@ -66,7 +66,7 @@ export default function Prizes() {
                 className="rounded-2xl xl:w-[400px] mr-10 mb-1 z-10"
               ></img>
             </div>
-            <p className="absolute text-3xl text-nowrap -left-[1000px] w-screen lg:text-7xl lg:bottom-24 xl:text-9xl  text-white xl:bottom-2 font-extrabold Montserrat drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)]">
+            <p className="absolute text-3xl text-nowrap -left-[1000px] w-screen lg:text-7xl lg:bottom-10 xl:text-8xl  text-white xl:bottom-4 font-extrabold Montserrat drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)]">
               PRIZE . PRIZE . PRIZE . PRIZE . PRIZE . PRIZE . PRIZE . PRIZE .
             </p>
           </div>
