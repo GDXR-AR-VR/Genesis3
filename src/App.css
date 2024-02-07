@@ -39,6 +39,12 @@
   background-size: cover;
   z-index: -100;
 }
+.imgAbout {
+  background-image:  url("./assets/background2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
 
 
 
