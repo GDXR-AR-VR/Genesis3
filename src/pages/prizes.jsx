@@ -1,17 +1,44 @@
-import micheal2 from "../assets/micheal2.svg";
+import michael2 from "../assets/michael2.svg";
 import gta6 from "../assets/background2.png";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default function Prizes() {
-  const dropShadow = "drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)]";
+  useEffect(() => {
+    gsap.to(".michael", {
+      scrollTrigger: {
+        trigger: ".michael",
+        start: "top 90%",
+        end: "top 40%",
+        scrub: 1,
+        toggleActions: "restart pause reset pause",
+      },
+      x: 0,
+      duration: 2,
+    });
+    gsap.to(".prize", {
+      scrollTrigger: {
+        trigger: ".prize",
+        start: "top 90%",
+        end: "top 40%",
+        scrub: 1,
+        toggleActions: "restart pause reset pause",
+      },
+      x: 0,
+      duration: 2,
+    });
+  }, []);
   return (
     <>
       <div
-        id="Prize"
+        id="prize"
         className="about relative flex justify-center font-[Pricedown] bg-black items-center imgAbout align-middle text-white text-center lg:-mt-3 xl:mt-0"
       >
         <div className="flex w-full h-screen bg-black">
           <div className="flex-col w-10/12 bg-white ">
-            <div className="bg-black flex  text-red-500 p-4  top-0 xl:text-8xl text-6xl w-full align-middle justify-center items-center rounded-br-[40px] lg:h-36">
-              <p>PRIZE</p>
+            <div className="bg-black flex relative text-red-500 p-4  top-0 xl:text-8xl text-6xl w-full align-middle justify-center items-center rounded-br-[40px] lg:h-36">
+              <div className="-translate-x-[400px] prize">PRIZE</div>
               <div className="ml-8 w-2/3 xl:h-1 lg:h-2 h-1 bg-red-500"></div>
             </div>
             <div className="rounded-[30px] xl:w-10/12 w-10/12 xl:h-32 lg:h-32 h-28 bg-yellow-400 flex items-center justify-center align-middle xl:mt-24 mt-20 m-auto drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]">
@@ -59,13 +86,13 @@ export default function Prizes() {
             </div>
           </div>
           <div className="relative bg-white xl:w-5/12 w-1/2  right-0 rounded-tl-[90px] flex justify-center align-middle items-center">
-            <div className="absolute top-4 left-4 border-2 z-10 bg-black overflow-hidden imgPrize rounded-[90px] lg:w-11/12 w-10/12 h-11/12 flex items-center align-middle justify-center">
+            <div className="absolute translate-x-[600px] michael top-4 left-4 border-2 z-10 bg-black overflow-hidden imgPrize rounded-[90px] lg:w-11/12 w-10/12 h-11/12 flex items-center align-middle justify-center">
               <img
                 src={gta6}
                 className="absolute bottom-10 scale-150 clear-both object-fill"
               ></img>
               <img
-                src={micheal2}
+                src={michael2}
                 className="rounded-2xl xl:w-[400px] mr-10 mb-1 z-10"
               ></img>
             </div>
@@ -129,7 +156,7 @@ export default function Prizes() {
           <div className="absolute bg-red-500 xl:w-5/12 w-5/12 h-screen right-0 rounded-tl-[60px] flex justify-center align-middle items-center">
             <div className=" border-2 bg-black imgPrize rounded-[60px]  w-7/12 h-7/12 flex items-center align-middle justify-center">
               <img
-                src={micheal2}
+                src={michael2}
                 className="rounded-2xl xl:w-[400px] mr-10 mb-2"
               ></img>
             </div>

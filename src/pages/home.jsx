@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
   return (
     <div
-      id="Home"
+      id="home"
       className="home h-screen flex-col justify-center items-center align-middle text-white text-center imgHome "
     >
       <img
