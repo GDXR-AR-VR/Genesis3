@@ -14,6 +14,7 @@ export default function About() {
         start: "top 90%",
         end: "top 40%",
         scrub: 1,
+
         toggleActions: "restart pause reset pause",
       },
       x: 40,
@@ -42,8 +43,8 @@ export default function About() {
         <Circles />
       </div>
       <div>
-        <div className="relative text-center w-1/2 xl:mt-20 ">
-          <div className="title text-while lg:text-7xl lg:mb-16 xl:text-9xl Montserrat font-bold xl:mb-20 lg:m-14 translate-x-[600px]">
+        <div className="relative title text-center w-1/2 xl:mt-20 translate-x-[600px]">
+          <div className=" text-while lg:text-7xl lg:mb-16 xl:text-9xl Montserrat font-bold xl:mb-20 lg:m-14 ">
             About{" "}
             <span className="absolute top-12 left-64 font-[BerlinSans] font-[700] text-red-600 z-20">
               Genesis

@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/home";
 import Prizes from "./pages/prizes";
 import Navbar from "./components/navbar";
+import Sponsors from "./pages/sponsors";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -15,6 +16,7 @@ function App() {
 
         <About />
         <Prizes />
+        <Sponsors />
         <div></div>
       </div>
     </>
