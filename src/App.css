@@ -33,6 +33,12 @@
   background-size:contain;
   z-index: -100;
 }
+.imgHomeMobile{
+  background-image: url("./assets/backgroundHome.svg");
+  background-repeat: no-repeat;
+  background-size:fill;
+  z-index: -100;
+}
 .imgAbout {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("./assets/background2.png");
   background-repeat: no-repeat;

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const calculateTimeLeft = () => {
   let year = 2024;
   let month = 2;
-  let day = 15;
+  let day = 21;
 
   const difference = +new Date(`${year}-${month}-${day}`) - +new Date();
 
@@ -36,17 +36,17 @@ export default function Counter() {
   return (
     <>
       <div className="relative flex justify-center font-[BerlinSans] w-screen z-20">
-        <div className="flex m-auto lg:gap-10 xl:gap-16 gap-8">
+        <div className="md:flex grid grid-cols-2 m-auto lg:gap-10 xl:gap-16 md:gap-8">
           {arr.map((item, index) => {
             return (
               <>
                 <div
                   key={index}
-                  className="flex-col text-center w-30 lg:w-52 h-40 drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)]"
+                  className="flex-col text-center w-36 lg:w-52 h-40 drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)]"
                 >
                   <div
                     key={index + item.value}
-                    className=" text-5xl lg:text-7xl xl:text-8xl z-10 text-red-600 "
+                    className=" text-7xl lg:text-7xl xl:text-8xl z-10 text-red-600 "
                   >
                     {item.value}
                   </div>

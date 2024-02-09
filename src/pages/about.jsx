@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import michael from "../assets/michael.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Circles from "../components/circles";
 gsap.registerPlugin(ScrollTrigger);
+import Circles from "../components/circles";
 
 export default function About() {
   const boxRef = useRef(null);
