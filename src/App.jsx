@@ -7,6 +7,7 @@ import Navbar from "./components/navbar";
 import Sponsors from "./pages/sponsors";
 import HomeMobile from "./pages/homeMobile";
 import AboutMobile from "./pages/aboutMobile";
+import Faqs from "./pages/faqs";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   useState(() => {
@@ -22,12 +23,14 @@ function App() {
             <About />
             <Prizes />
             <Sponsors />
+            <Faqs />
           </>
-        ) : <>
-          <HomeMobile />
-          <AboutMobile />
+        ) : (
+          <>
+            <HomeMobile />
+            <AboutMobile />
           </>
-        }
+        )}
 
         <div></div>
       </div>

@@ -43,7 +43,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="w-screen flex absolute text-gray-400 text-2xl font-[Inter]  z-20  justify-center bg-transparent">
+      <div className="w-screen flex absolute text-gray-400 xl:text-2xl text-xl font-[Inter]  z-20  justify-center bg-transparent">
         <motion.div
           className="w-2/3 xl:absolute xl:left-56 flex items-center justify-center align-middle gap-6"
           initial={{ x: -50, opacity: 0 }}

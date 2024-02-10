@@ -5,10 +5,12 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const screenHeight = window.innerHeight;
+  const difference = screenHeight < 900 ? 500 : 300;
+  console.log(screenHeight);
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
-      console.log(position);
+      // console.log(position);
       setScrollPosition(position);
     };
 
@@ -27,10 +29,10 @@ export default function Home() {
         src={background}
         className="w-full absolute -top-10 drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)] z-10"
       ></img>
-      {scrollPosition < screenHeight - 300 && (
-        <div className=" xl:mt-48  mt-20 select-none fixed m-auto w-screen text-7xl sm:text-xl md:text-[100px] lg:text-[150px] xl:text-[200px] parallax align-middle text-center font-[Pricedown]">
+      {scrollPosition < screenHeight - difference && (
+        <div className=" xl:mt-28  mt-20 select-none fixed m-auto w-screen text-7xl lg:text-[120px] xl:text-[200px] align-middle text-center font-[Pricedown]">
           <img
-            className="absolute xl:scale-100 lg:scale-75 lg:-top-52 md:scale-75 md:left-20 md:-top-48 -top-20 xl:left-56 -z-10 rotate-12 xl:-top-48"
+            className="absolute xl:scale-100 lg:scale-50 lg:-top-52 lg:left-32 -top-20 xl:left-64 -z-10 rotate-12 xl:-top-32"
             src={Slash}
           ></img>
           Genesis
