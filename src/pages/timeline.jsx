@@ -1,24 +1,35 @@
-
-import threepeople from "../assets/threepeople.png"
+import threepeople from "../assets/threepeople.png";
 
 export default function Timeline() {
   const dropShadow = "drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)]";
   return (
     <>
       <div
-        id="Prize"
-        className="about relative flex flex-col font-[BerlinSans] items-end align-middle text-white text-center lg:-mt-3 xl:mt-0"
+        id="timeline"
+        className="timeline relative bg-white flex flex-col font-[BerlinSans] items-end align-middle text-white text-center lg:-mt-3 xl:mt-0"
       >
-        <div className="bg-[#00022E] flex text-red-500 p-10 right-0 top-0 xl:text-8xl text-6xl w-[40%] rounded-tl-[40px] lg:h-36">
-          <p className="font-weight-900">Timeline</p>
+        <div className="relative  flex text-red-500  xl:text-8xl text-6xl w-full h-32">
+          <div className="w-1/2 bg-white h-full justify-center items-center rounded-br-[40px] z-10"></div>
+          <div className="absolute bg-[#00022E] w-20 h-20 right-1/2 top-20"></div>
+          <p className="w-1/2 font-[900] text-9xl rounded-tl-[70px] bg-[#00022E] ">
+            Timeline
+          </p>
         </div>
-        <div className="flex w-full h-[80vh] bg-[#00022E] justify-around items-center">
+
+        <div className=" relative flex w-full h-[80vh] bg-[#00022E] justify-around p-10 items-center">
           <div className="w-[70%] flex items-center gap-20">
-            <div className="imgContainer overflow-visible">
-              <img src={threepeople} alt="" className="relative w-[200%]" />
+            <div className=" imgContainer overflow-visible">
+              <img src={threepeople} alt="" className=" w-[200%]" />
             </div>
             <div className="text-content w-[50%] text-left text-2xl">
-              <p>Rev your engines and fasten your seatbelts as the GDXR Club kick-starts the Third Edition of Genesis – your ticket to a gaming adventure that hits closer to home than ever! Returning after the 2022 Last Edition, this 2024 Genesis isn't just about pixels and coding; it's about bringing the spirit of gaming to life.</p>
+              <p>
+                Rev your engines and fasten your seatbelts as the GDXR Club
+                kick-starts the Third Edition of Genesis – your ticket to a
+                gaming adventure that hits closer to home than ever! Returning
+                after the 2022 Last Edition, this 2024 Genesis isn't just about
+                pixels and coding; it's about bringing the spirit of gaming to
+                life.
+              </p>
             </div>
           </div>
         </div>
@@ -75,7 +86,6 @@ export default function Timeline() {
             <div className="head text-xl text-red-500">
               <p>Final Results</p>
             </div>
-            
           </div>
           {/* <div className="one flex flex-col justify-center items-center">
             <p className="text-xl text-red-500">Registration start</p>
@@ -113,8 +123,7 @@ export default function Timeline() {
             <p className="text-2xl text-red-500">Registration start</p>
           </div> */}
         </div>
-
       </div>
-      </>
+    </>
   );
 }
