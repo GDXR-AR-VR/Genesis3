@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 export default function HomeMobile() {
   const registerationLink =
-  "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235";
+    "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235";
   useEffect(() => {
     gsap.to(".genesis", {
       scrollTrigger: {
@@ -26,7 +26,7 @@ export default function HomeMobile() {
   }, []);
   return (
     <>
-      <div className="home  h-screen select-none flex-col justify-center overflow-hidden items-center bg-blue-950 align-middle bg-gradient-to-b from-blue-950  to-blue-700 text-white text-center">
+      <div className="home relative  h-screen select-none flex-col justify-center overflow-hidden items-center bg-blue-950 align-middle bg-gradient-to-b from-blue-950  to-blue-700 text-white text-center">
         <img
           src={background}
           className="absolute bottom-0 md:left-0 left-72 xs:left-80 scale-[6] md:scale-[1.6] drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)] z-10 object-contain"

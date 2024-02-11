@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.Montserrat {
-  font-family: "Montserrat", sans-serif;
+.Montserrat{
+  font-family: 'Montserrat', sans-serif;
 }
 @font-face {
   font-family: "BerlinSans";
@@ -24,41 +24,48 @@
 }
 
 .register {
-  clip-path: polygon(0 19%, 87% 20%, 100% 47%, 100% 100%, 18% 100%, 0 79%);
-  z-index: 50;
+    clip-path: polygon(0 19%, 87% 20%, 100% 47%, 100% 100%, 18% 100%, 0 79%);
+    z-index: 50;
 }
-.imgHome {
+.imgHome{
   background-image: url("./assets/backgroundHome.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:contain;
   z-index: -100;
 }
-.imgHomeMobile {
+.imgHomeMobile{
   background-image: url("./assets/backgroundHome.svg");
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size:fill;
   z-index: -100;
 }
 .imgAbout {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-    url("./assets/background2.png");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("./assets/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -100;
 }
 .imgAbout {
-  background-image: url("./assets/background2.png");
+  background-image:  url("./assets/background2.png");
   background-repeat: no-repeat;
   background-size: contain;
+  
 }
 
 @media screen and (min-width: 1000px) {
-  .imgHome {
-    background-size: fill;
-  }
+  
+  
+  .imgHome{
+    background-size:fill;
+  } 
 }
 @media screen and (min-width: 1100px) {
-  .imgHome {
-    background-size: contain;
+
+  .imgHome{
+    background-size:contain;
   }
+  
 }
+
+
+
