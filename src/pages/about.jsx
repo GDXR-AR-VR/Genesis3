@@ -35,7 +35,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="about flex justify-center bg-gradient-to-t from-black to-transparent items-center align-middle text-white text-center bg-black imgAbout z-50 md:-mt-20 2xl:mt-52 xl:mt-40"
+      className="about flex justify-center bg-gradient-to-t from-black to-transparent items-center align-middle text-white text-center bg-black imgAbout z-50 md:-mt-4 lg:-mt-12 2xl:mt-52 xl:mt-40"
     >
       <div ref={boxRef} className=" w-1/2 relative flex justify-center ">
         <div className="absolute box -translate-x-[800px] lg:w-4/5 md:w-4/5 xl:w-[470px] xl:h-[550px] overflow-hidden">

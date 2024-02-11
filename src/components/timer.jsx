@@ -36,24 +36,24 @@ export default function Counter() {
   return (
     <>
       <div className="relative flex justify-center font-[BerlinSans] w-screen z-20">
-        <div className="md:flex grid grid-cols-2 m-auto lg:gap-10 xl:gap-16 md:gap-8">
+        <div className="md:flex grid grid-cols-2  m-auto lg:gap-10 xl:gap-16 md:gap-8 gap-20">
           {arr.map((item, index) => {
             return (
               <>
                 <div
                   key={index}
-                  className="relative flex-col justify-center items-center align-middle text-center w-36 lg:w-52 lg:mt-20 drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)]"
+                  className="relative flex-col justify-center items-center align-middle text-center w-36 lg:w-52 lg:mt-20 md:mt-16 drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)]"
                 >
                   <div
                     key={index + item.value}
-                    className="absolute xl:-top-20 lg:left-10 lg:-top-20 xl:left-10 lg:w-32 text-7xl lg:text-9xl xl:text-9xl z-20 text-red-600"
+                    className="absolute xl:-top-20 md:-top-16 w-28 left-4 lg:left-10 lg:-top-20 xl:left-10  lg:w-32  md:left-4 text-8xl lg:text-9xl xl:text-9xl z-20 text-red-600"
                   >
                     {item.value}
                   </div>
 
                   <div
                     key={index + item.title}
-                    className=" w-full text-3xl lg:text-5xl items-center"
+                    className=" w-full text-4xl lg:text-5xl items-center"
                   >
                     {item.title}
                   </div>
