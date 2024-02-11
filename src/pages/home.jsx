@@ -2,7 +2,10 @@ import CountdownTimer from "../components/timer";
 import background from "../assets/background.svg";
 import Slash from "../assets/slash.svg";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 export default function Home() {
+  const registerationLink =
+    "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235";
   const [scrollPosition, setScrollPosition] = useState(0);
   const screenHeight = window.innerHeight;
   const difference = screenHeight < 900 ? 500 : 300;
@@ -39,9 +42,15 @@ export default function Home() {
         </div>
       )}
       <div className="xl:h-64 lg:h-40 z-10"></div>
-      <div className=" relative register bg-red-600 m-auto lg:w-40 lg:h-16 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 w-28 h-8 text-2xl p-0.5 mt-20 font-[BerlinSans] font-bold text-center z-30">
+      <motion.div
+        whileHover={{ rotate: Math.random() * 3, scale: 1.1 }}
+        onClick={() => {
+          window.open(registerationLink, "_blank");
+        }}
+        className=" relative register bg-red-600 m-auto lg:w-40 lg:h-16 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 w-28 h-8 text-2xl p-0.5 mt-20 font-[BerlinSans] font-bold text-center z-30"
+      >
         Register
-      </div>
+      </motion.div>
       <div className="lg:h-16 z-10 font-[Pricedown]"></div>
       <div className="z-20  relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-2xl">
         COMMENSING IN

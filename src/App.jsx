@@ -8,6 +8,7 @@ import Sponsors from "./pages/sponsors";
 import HomeMobile from "./pages/homeMobile";
 import AboutMobile from "./pages/aboutMobile";
 import Faqs from "./pages/faqs";
+import Footer from "./pages/footer";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   useState(() => {
@@ -24,6 +25,7 @@ function App() {
             <Prizes />
             <Sponsors />
             <Faqs />
+            <Footer />
           </>
         ) : (
           <>

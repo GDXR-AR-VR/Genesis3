@@ -48,7 +48,7 @@ export default function Navbar() {
           className="w-2/3 xl:absolute xl:left-56 flex items-center justify-center align-middle gap-6"
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1 }}
+          transition={{ delay: 0.5 }}
         >
           {arr.map((obj, index) => {
             return (

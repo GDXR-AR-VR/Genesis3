@@ -56,8 +56,8 @@ export default function Prizes() {
               </div>
             </div>
             <div className="flex w-full justify-center ">
-              <div className="xl:w-11/12 w-11/12 flex  font-[Pricedown] items-center align-middle justify-center mt-20">
-                <div className="rounded-[30px] xl:w-5/12 lg:w-2/3 w-1/2 z-10 h-40 bg-gray-400 flex-col items-center  mr-10 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]">
+              <div className="xl:w-10/12 w-10/12 flex  font-[Pricedown] items-center align-middle justify-between mt-20">
+                <div className="rounded-[30px] xl:w-6/12 lg:w-2/3 w-1/2 z-10 h-40 bg-gray-400 flex-col items-center  mr-10 drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]">
                   <div className="text-black md:text-4xl lg:text-5xl p-2 xl:text-5xl">
                     11<span className=" align-super text-3xl"> nd</span> Prize
                   </div>
@@ -69,7 +69,7 @@ export default function Prizes() {
                     </div>
                   </div>
                 </div>
-                <div className="rounded-[30px] xl:w-5/12 lg:w-2/3 z-10 w-1/2 h-40 bg-red-500 flex-col items-center drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]">
+                <div className="rounded-[30px] xl:w-6/12 lg:w-2/3 z-10 w-1/2 h-40 bg-red-500 flex-col items-center drop-shadow-[0_2.2px_2.2px_rgba(0,0,0,0.8)]">
                   <p className="text-black md:text-4xl p-2 xl:text-5xl lg:text-5xl">
                     111<span className=" align-super text-3xl"> rd</span> Prize
                   </p>

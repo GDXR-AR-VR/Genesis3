@@ -5,7 +5,14 @@ import { motion } from "framer-motion";
 export default function Faqs() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentOpen] = useState(0);
-  const optionArr = ["Sponsor Us", "Contact Us", "Register"];
+  const optionArr = [
+    { title: "Sponsor Us", link: "" },
+    { title: "Contact Us", link: "#contactus" },
+    {
+      title: "Register",
+      link: "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235",
+    },
+  ];
   const arr = [
     {
       question: "What is Genesis?",
@@ -77,9 +84,15 @@ export default function Faqs() {
           {optionArr.map((item, index) => {
             return (
               <>
-                <div className=" relative register bg-red-500 m-auto text-white w-fit  xl:h-16 xl:p-4 lg:text-4xl lg:p-4  text-2xl p-0.5 mt-20 font-[BerlinSans] font-bold text-center z-30">
-                  {item}
-                </div>
+                <motion.div
+                  whileHover={{ rotate: Math.random() * 3, scale: 1.1 }}
+                  onClick={() => {
+                    window.open(item.link, "_blank");
+                  }}
+                  className=" relative register bg-red-500 m-auto text-white w-fit  xl:h-16 xl:p-4 lg:text-4xl lg:p-4  text-2xl p-0.5 mt-20 font-[BerlinSans] font-bold text-center z-30"
+                >
+                  {item.title}
+                </motion.div>
               </>
             );
           })}
