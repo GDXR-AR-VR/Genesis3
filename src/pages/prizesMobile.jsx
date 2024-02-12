@@ -4,7 +4,7 @@ import PrizeComponent from "../components/prize";
 export default function PrizesMobile() {
   return (
     <>
-      <div className="home relative  h-screen select-none flex-col justify-center overflow-hidden bg-white items-center align-middle text-black text-center">
+      <div className="home relative  select-none flex-col justify-center overflow-hidden bg-white items-center align-middle text-black text-center">
         <div className="w-full flex">
           <div className="h-20 w-8/12 relative bg-black rounded-br-[30px] items-center align-middle justify-center">
             <div className=" h-full prize flex w-full justify-center items-center font-extrabold font-[BerlinSans] text-red-500 text-5xl text-center">
