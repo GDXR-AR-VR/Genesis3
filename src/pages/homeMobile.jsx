@@ -26,11 +26,8 @@ export default function HomeMobile() {
   }, []);
   return (
     <>
-      <div className="home relative  h-screen select-none flex-col justify-center overflow-hidden items-center bg-blue-950 align-middle bg-gradient-to-b from-blue-950  to-blue-700 text-white text-center">
-        <img
-          src={background}
-          className="absolute bottom-0 md:left-0 left-72 xs:left-80 scale-[6] md:scale-[1.6] drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)] z-10 object-contain"
-        ></img>
+      <div className="home relative  h-screen select-none flex-col justify-center overflow-hidden imgHomeMobile items-center bg-blue-950 align-middle bg-gradient-to-b from-blue-950  to-blue-700 text-white text-center">
+        
 
         <div className="md:mt-12 relative mt-20 select-none genesis w-screen text-7xl md:text-9xl align-middle text-center  font-[Pricedown]">
           <img
