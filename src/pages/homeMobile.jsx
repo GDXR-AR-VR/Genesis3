@@ -27,8 +27,6 @@ export default function HomeMobile() {
   return (
     <>
       <div className="home relative  h-screen select-none flex-col justify-center overflow-hidden imgHomeMobile items-center bg-blue-950 align-middle bg-gradient-to-b from-blue-950  to-blue-700 text-white text-center">
-        
-
         <div className="md:mt-12 relative mt-20 select-none genesis w-screen text-7xl md:text-9xl align-middle text-center  font-[Pricedown]">
           <img
             className="absolute scale-75 md:scale-[0.6] md:-top-48 md:-left-10 -top-28  -left-16 -z-10 rotate-12 xl:-top-48"
