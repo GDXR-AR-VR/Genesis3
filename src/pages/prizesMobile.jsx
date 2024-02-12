@@ -45,7 +45,7 @@ export default function PrizesMobile() {
             prize={2}
             prizeAmount={"12,500"}
             width={"w-[45%]"}
-            height={"h-44"}
+            height={"xs:h-44 h-36"}
             text={"text-lg md:text-2xl hidden xs:block"}
           />
           <PrizeComponent
@@ -53,7 +53,7 @@ export default function PrizesMobile() {
             prize={3}
             prizeAmount={"10,000"}
             width={"w-[45%]"}
-            height={"h-44"}
+            height={"xs:h-44 h-36"}
             text={"text-lg md:text-2xl hidden xs:block"}
           />
         </div>
