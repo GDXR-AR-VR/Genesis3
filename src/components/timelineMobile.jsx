@@ -54,7 +54,7 @@ export default function TimeLineMobileComponent() {
             1
           )} ${check(2)} border-r-4 rounded-r-full `}
         >
-          <p className="text-red-500 absolute -left-2 top-3 w-20 text-left font-bold">
+          <p className="text-red-500 absolute xs:-left-2 -left-16 top-3 w-20 text-left font-bold">
             REGISTRATIONS START
           </p>
           <p className="text-red-500 absolute right-7 top-3 text-right font-bold w-28">
@@ -80,7 +80,7 @@ export default function TimeLineMobileComponent() {
           <p className="text-red-500 absolute -right-8 top-1 text-right font-bold w-28">
             ROUND 1 STARTS
           </p>
-          <p className="text-white absolute -left-8 -top-8  text-left  opacity-80">
+          <p className="text-white absolute xs:-left-8 -top-8  text-left  opacity-80">
             28 FEB 2024
           </p>
           <p className="text-white absolute -right-2 -top-10  text-left opacity-80">
@@ -97,11 +97,11 @@ export default function TimeLineMobileComponent() {
         <p className="text-red-500 absolute right-24 md:right-60 md:bottom-16 bottom-10 text-right font-bold w-20">
           FINAL RESULTS
         </p>
-        <p className="text-white absolute left-20 md:left-56 md:bottom-36 bottom-28 text-left opacity-80">
-          09 FEB 2024
+        <p className="text-white absolute xs:left-20 md:left-56 md:bottom-36 bottom-28 text-left opacity-80">
+          09 MAR 2024
         </p>
         <p className="text-white absolute right-16 md:right-60 md:bottom-36 bottom-28 text-left opacity-80">
-          10 FEB 2024
+          10 MAR 2024
         </p>
       </div>
     </>
