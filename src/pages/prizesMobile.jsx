@@ -9,7 +9,7 @@ export default function PrizesMobile() {
           <div className="h-20 w-8/12 relative bg-black rounded-br-[30px] items-center align-middle justify-center">
             <div className=" h-full prize flex w-full justify-center items-center font-extrabold font-[BerlinSans] text-red-500 text-5xl text-center">
               PRIZE
-              <div className="ml-8 md:w-3/5 w-1/3 xl:h-1 lg:h-2 h-1 bg-red-500"></div>
+              <div className="xs:ml-8 ml-2 md:w-3/5 w-1/3 h-1 bg-red-500"></div>
             </div>
             <PrizeComponent
               color={"bg-yellow-400"}
@@ -30,7 +30,7 @@ export default function PrizesMobile() {
                 ></img>
                 <img
                   src={michael2}
-                  className="rounded-2xl  mr-10 mb-1 z-10 michael scale-110 object-cover"
+                  className="rounded-2xl  mr-10 mb-1 z-10 michael scale-150 xs:scale-110  object-cover"
                 ></img>
               </div>
             </div>

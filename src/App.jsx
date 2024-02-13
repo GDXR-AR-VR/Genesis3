@@ -9,8 +9,9 @@ import HomeMobile from "./pages/homeMobile";
 import AboutMobile from "./pages/aboutMobile";
 import Faqs from "./pages/faqs";
 import Footer from "./pages/footer";
-import Timeline from "./pages/timeline"
+import Timeline from "./pages/timeline";
 import PrizesMobile from "./pages/prizesMobile";
+import TimelineMobile from "./pages/timelineMobile";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   useState(() => {
@@ -35,6 +36,7 @@ function App() {
             <HomeMobile />
             <AboutMobile />
             <PrizesMobile />
+            <TimelineMobile />
           </>
         )}
 

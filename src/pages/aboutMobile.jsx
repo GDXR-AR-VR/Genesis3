@@ -7,7 +7,7 @@ export default function AboutMobile() {
     <>
       <div className="about relative select-none flex-col justify-center overflow-hidden items-center imgAboutMobile bg-black align-middle  text-white text-center">
         <div className="relative title text-center w-full xl:mt-20 ">
-          <div className="absolute left-7 text-white  text-6xl Montserrat font-bold">
+          <div className="absolute left-6  text-white text-5xl xs:text-6xl Montserrat font-bold">
             About{" "}
             <span className="absolute top-8 left-20 font-[BerlinSans] font-extrabold text-red-600 z-20">
               GENESIS
