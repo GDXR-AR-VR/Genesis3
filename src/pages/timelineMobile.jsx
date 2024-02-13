@@ -6,12 +6,12 @@ export default function TimelineMobile() {
       <div className="timeline relative  select-none flex-col justify-center overflow-hidden bg-[#00022E] items-center align-middle  text-center">
         {/* Title */}
         <div className="flex bg-white">
-          <div className="w-1/2 bg-white ">
-            <div className="w-full rounded-tr-[30px] bg-[#00022E] h-20 font-extrabold font-[BerlinSans]  text-red-500 text-5xl flex items-center">
+          <div className="w-2/3 bg-white ">
+            <div className="w-full rounded-tr-[30px] bg-[#00022E] h-20 font-extrabold font-[BerlinSans]  text-red-500  text-5xl flex items-center">
               <p className="m-auto">TIMELINE</p>
             </div>
           </div>
-          <div className="w-1/2 bg-[#00022E]">
+          <div className="w-1/3 bg-[#00022E]">
             <div className="w-full rounded-bl-[30px] bg-white h-20 "></div>
           </div>
         </div>
