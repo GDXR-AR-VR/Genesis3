@@ -26,27 +26,47 @@ export default function HomeMobile() {
   }, []);
   return (
     <>
-      <div className="home relative  h-screen select-none flex-col justify-center overflow-hidden imgHomeMobile items-center bg-blue-950 align-middle bg-gradient-to-b from-blue-950  to-blue-700 text-white text-center">
-        <div className="md:mt-12 relative mt-20 select-none genesis w-screen text-7xl md:text-9xl align-middle text-center  font-[Pricedown]">
-          <img
-            className="absolute scale-75 md:scale-[0.6] md:-top-48 md:-left-10 -top-28  -left-16 -z-10 rotate-12 xl:-top-48"
-            src={Slash}
-          ></img>
-          Genesis
+      <div className="home relative  h-screen  flex-col justify-center overflow-hidden imgHomeMobile items-center bg-blue-950 align-middle bg-gradient-to-b from-blue-950  to-blue-700 text-white text-center">
+        <div>
+          <div className="md:mt-12 relative mt-20 select-none genesis w-screen text-7xl md:text-9xl align-middle text-center  font-[Pricedown]">
+            <img
+              className="absolute scale-75 md:scale-[0.6] md:-top-48 md:-left-10 -top-28  -left-16 -z-10 rotate-12 xl:-top-48"
+              src={Slash}
+            ></img>
+            Genesis
+          </div>
         </div>
         <div className="md:h-10 z-10"></div>
         <div
-          onTouchEnd={() => {
-            window.open(registerationLink, "_blank");
-          }
-
-          }
+          className="w-full mt-20 mb-10 z-20 flex justify-center"
           onClick={() => {
+            console.log("clicked");
             window.open(registerationLink, "_blank");
           }}
-          className="relative register mb-10 bg-red-600 m-auto  w-[150px] h-[50px] text-3xl p-3 mt-20 font-[BerlinSans] font-bold text-center z-30"
         >
-          Register
+          <div
+            onClick={() => {
+              console.log("clicked");
+              window.open(registerationLink, "_blank");
+            }}
+          >
+            <div
+              onClick={() => {
+                window.open(registerationLink, "_blank");
+              }}
+              className="register  bg-red-600   w-[150px] h-[50px]  text-3xl p-3  font-[BerlinSans] font-bold text-center"
+            >
+              <p
+                className="z-50 "
+                onClick={() => {
+                  window.open(registerationLink, "_blank");
+                }}
+              >
+                {" "}
+                Register
+              </p>
+            </div>
+          </div>
         </div>
         <div className=" z-10 font-[Pricedown]"></div>
         <div className="z-20  relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-xl">

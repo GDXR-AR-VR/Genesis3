@@ -14,7 +14,7 @@ export default function AboutMobile() {
             </span>
           </div>
           <div className="h-20"></div>
-          <div className="p-10 w-full  text-justify">
+          <div className="p-10 w-full  text-justify font-[BerlinSans]">
             Rev your engines and fasten your seatbelts as the GDXR Club
             kick-starts the Third Edition of Genesis – your ticket to a gaming
             adventure that hits closer to home than ever! Returning after the
