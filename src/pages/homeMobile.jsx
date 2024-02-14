@@ -36,6 +36,11 @@ export default function HomeMobile() {
         </div>
         <div className="md:h-10 z-10"></div>
         <div
+          onTouchEnd={() => {
+            window.open(registerationLink, "_blank");
+          }
+
+          }
           onClick={() => {
             window.open(registerationLink, "_blank");
           }}
