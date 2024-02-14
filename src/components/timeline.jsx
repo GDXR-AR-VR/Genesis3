@@ -51,17 +51,28 @@ export default function TimelineComponent() {
         </div>
       </div>
       <div className="middle flex justify-center items-center">
-        <div className="smallbox w-2 h-12 rounded-sm bg-red-500 "></div>
+        <div
+          className="smallbox w-2 h-8
+         rounded-sm bg-red-500 "
+        ></div>
         <div className={`smallbox w-40 h-2 ${check(1)}`}></div>
-        <div className="smallbox w-2 h-12 rounded-sm bg-red-500 "></div>
+        <div className="smallbox w-2 h-8 rounded-sm bg-red-500 "></div>
         <div className={`smallbox w-40 h-2 ${check(2)}`}></div>
-        <div className="smallbox w-2 h-12 rounded-sm bg-red-500 "></div>
+        <div
+          className="smallbox w-2 h-8 rounded-sm bg-red-500 "
+        ></div>
         <div className={`smallbox w-40 h-2 ${check(3)}`}></div>
-        <div className="smallbox w-2 h-12 rounded-sm bg-slate-100 "></div>
+        <div
+          className="smallbox w-2 h-8 rounded-sm bg-slate-100 "
+        ></div>
         <div className={`smallbox w-40 h-2 ${check(4)}`}></div>
-        <div className="smallbox w-2 h-12 rounded-sm bg-slate-100 "></div>
+        <div
+          className="smallbox w-2 h-8 rounded-sm bg-slate-100 "
+        ></div>
         <div className={`smallbox w-40 h-2 ${check(5)}`}></div>
-        <div className="smallbox w-2 h-12 rounded-sm bg-slate-100 "></div>
+        <div
+          className="smallbox w-2 h-8 rounded-sm bg-slate-100 "
+        ></div>
       </div>
       <div className="top flex justify-center items-center gap-14">
         <div className="head text-lg text-slate-300">
