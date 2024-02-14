@@ -69,6 +69,27 @@
   background-size: contain;
 }
 
+.parent {
+  /*   width:50px;  */
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*   height : 50px; */
+
+  overflow: visible;
+  clip-path: polygon(0 19%, 87% 20%, 100% 47%, 100% 100%, 18% 100%, 0 79%);
+}
+
+.corner {
+  background-color: rgb(255, 0, 0);
+  width: 8px;
+  height: 8px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  translate: -8px 8px;
+}
+
 @media screen and (min-width: 1000px) {
   .imgHome {
     background-size: fill;

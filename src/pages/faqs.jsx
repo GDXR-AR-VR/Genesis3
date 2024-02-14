@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDown, faCircleUp } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import ShapedButton from "../components/shapedButton";
 export default function Faqs() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentOpen] = useState(0);
@@ -32,29 +33,30 @@ export default function Faqs() {
         className="relative sponsors  select-none w-full flex-col bg-[#ECE8E1] overflow-hidden text-black imgSponsors justify-center items-center align-middle "
       >
         <div className="xl:h-20 lg:h-12"></div>
-        <div className="font-[Montserrat] select-none font-bold text-9xl text-center">
+        <div className="font-[Montserrat] select-none font-bold text-5xl md:text-7xl lg:text-9xl text-center">
           FAQs
         </div>
-        <div className="xl:h-20 lg:h-12"></div>
+        <div className="xl:h-20 lg:h-12 h-16"></div>
         <div className="flex-col justify-center items-center align-center">
           {arr.map((item, index) => {
             return (
               <>
                 <motion.div
-                  className="relative w-8/12 font-[BerlinSans] font-medium text-black text-5xl p-5 border-b-2 m-auto  border-black"
+                  className="relative w-9/12 font-[BerlinSans] font-medium text-black text-2xl md:text-3xl lg:text-5xl p-3 lg:p-5 border-b-2 m-auto  border-black"
                   key={index}
                 >
                   {" "}
                   {item.question}
                   <FontAwesomeIcon
                     key={index + item.question}
-                    className="font-normal right-16 absolute "
+                    className="font-normal lg:right-16 right-2 absolute z-10"
                     icon={
                       isOpen && index === currentIndex
                         ? faCircleUp
                         : faCircleDown
                     }
                     onClick={() => {
+                      console.log("clicked");
                       if (isOpen && index !== currentIndex) {
                         setCurrentOpen(index);
                         return;
@@ -67,7 +69,7 @@ export default function Faqs() {
                   {isOpen && index === currentIndex && (
                     <motion.div
                       key={index + item.answer}
-                      className="xl:text-2xl mt-5 bg-red-500 text-lg text-white p-5 select-none"
+                      className="xl:text-2xl mt-5 bg-red-500 text-sm md:text-lg  text-white p-2 md:p-4 lg:p-5 select-none"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 1 }}
@@ -80,7 +82,7 @@ export default function Faqs() {
             );
           })}
         </div>
-        <div className="flex w-8/12 m-auto justify-between mb-20">
+        <div className="flex flex-wrap w-10/12 h-32 md:w-8/12 m-auto justify-between mb-20">
           {optionArr.map((item, index) => {
             return (
               <>
@@ -89,7 +91,7 @@ export default function Faqs() {
                   onClick={() => {
                     window.open(item.link, "_blank");
                   }}
-                  className=" relative register bg-red-500 m-auto text-white w-fit  xl:h-16 xl:p-4 lg:text-4xl lg:p-4  text-2xl p-0.5 mt-20 font-[BerlinSans] font-bold text-center z-30"
+                  className=" relative register mt-10 bg-red-500 m-auto text-white w-fit h-12 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 text-xl md:text-2xl p-3 md:mt-20 font-[BerlinSans] font-bold text-center z-30"
                 >
                   {item.title}
                 </motion.div>
@@ -97,7 +99,7 @@ export default function Faqs() {
             );
           })}
         </div>
-        <div className="absolute bottom-20 w-full">
+        <div className="absolute bottom-20 md:w-full md:scale-100 scale-75 right-0">
           <div className="absolute  right-0 rotate-[20deg] border-t-[50px] border-t-transparent border-r-[75px]  top-0 border-r-[#7561e3] border-b-[50px] border-b-transparent scale-[5] bg-transparent">
             <div className="absolute  border-t-[50px] border-t-transparent border-r-[75px] -top-[50px]   border-r-[#ffffff] border-b-[50px] border-b-transparent scale-[0.95] bg-transparent">
               <div className="absolute   border-t-[50px] border-t-transparent -top-[50px]  border-r-[75px]  border-r-[#7f85fe] border-b-[50px] border-b-transparent scale-[0.9]">

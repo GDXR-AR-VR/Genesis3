@@ -39,7 +39,7 @@ export default function HomeMobile() {
           onClick={() => {
             window.open(registerationLink, "_blank");
           }}
-          className=" relative register mb-10 bg-red-600 m-auto  w-[150px] h-[50px] text-3xl p-3 mt-20 font-[BerlinSans] font-bold text-center z-30"
+          className="relative register mb-10 bg-red-600 m-auto  w-[150px] h-[50px] text-3xl p-3 mt-20 font-[BerlinSans] font-bold text-center z-30"
         >
           Register
         </div>
