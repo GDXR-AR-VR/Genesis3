@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div
       id="home"
-      className="home h-screen select-none flex-col justify-center items-center align-middle text-white text-center imgHome "
+      className="home h-screen select-none flex-col justify-center items-center align-middle text-white text-center imgHome"
     >
       <img
         src={background}

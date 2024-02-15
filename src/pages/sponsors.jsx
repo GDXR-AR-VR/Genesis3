@@ -3,9 +3,10 @@ import thanos from "../assets/thanos.png";
 import polygon from "../assets/polygon.svg";
 import devfolio from "../assets/devfolio.svg";
 import ethindia from "../assets/ethindia.svg";
-
+import maidaan from "../assets/maidaan.svg";
 export default function Sponsors() {
   const goldSponsor = [polygon, devfolio, ethindia];
+  const titleSponsor = [maidaan];
   return (
     <>
       <div
@@ -26,15 +27,24 @@ export default function Sponsors() {
               </span>
             </div>
             <div className="font-[BerlinSans] xl:text-4xl">
-              <div>Title Sponsor</div>
-              <div className="flex">
-                <div className="register w-[240px] h-[100px] border-2 items-center justify-center flex bg-red-500 ">
-                  <div className="register w-[230px] h-[90px] bg-white "></div>
-                </div>
+              <div>
+                <p className="text-[#3E3E3E] ml-10">Title Sponsor</p>
+              </div>
+              <div className="flex ml-10 w-full flex-wrap">
+                {titleSponsor.map((sponsor) => (
+                  <div className="register w-[240px] h-[100px] border-2 items-center justify-center flex bg-red-500 mr-10">
+                    <div className="register w-[230px] h-[90px] bg-white justify-center">
+                      <img
+                        src={sponsor}
+                        className="w-full h-full p-4 mt-2 aspect-scale-1/1"
+                      ></img>
+                    </div>
+                  </div>
+                ))}
               </div>
               <div>Platinum Sponsor</div>
               <div>Gold Sponsor</div>
-              <div className="flex">
+              <div className="flex m-10">
                 {goldSponsor.map((sponsor) => (
                   <div className="register w-[240px] h-[100px] border-2 items-center justify-center flex bg-red-500 mr-10">
                     <div className="register w-[230px] h-[90px] bg-white justify-center">

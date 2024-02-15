@@ -38,10 +38,10 @@ export default function TimelineComponent() {
           <p>21 Feb 2024</p>
         </div>
         <div className="head text-xl text-red-500">
-          <p>Round 1 Start</p>
+          <p>Registration End</p>
         </div>
         <div className="head text-lg text-slate-300">
-          <p>30 Feb 2024</p>
+          <p>01 Mar 2024</p>
         </div>
         <div className="head text-xl text-red-500">
           <p>Round 2 Start</p>
@@ -58,31 +58,23 @@ export default function TimelineComponent() {
         <div className={`smallbox w-40 h-2 ${check(1)}`}></div>
         <div className="smallbox w-2 h-8 rounded-sm bg-red-500 "></div>
         <div className={`smallbox w-40 h-2 ${check(2)}`}></div>
-        <div
-          className="smallbox w-2 h-8 rounded-sm bg-red-500 "
-        ></div>
+        <div className="smallbox w-2 h-8 rounded-sm bg-red-500 "></div>
         <div className={`smallbox w-40 h-2 ${check(3)}`}></div>
-        <div
-          className="smallbox w-2 h-8 rounded-sm bg-slate-100 "
-        ></div>
+        <div className="smallbox w-2 h-8 rounded-sm bg-slate-100 "></div>
         <div className={`smallbox w-40 h-2 ${check(4)}`}></div>
-        <div
-          className="smallbox w-2 h-8 rounded-sm bg-slate-100 "
-        ></div>
+        <div className="smallbox w-2 h-8 rounded-sm bg-slate-100 "></div>
         <div className={`smallbox w-40 h-2 ${check(5)}`}></div>
-        <div
-          className="smallbox w-2 h-8 rounded-sm bg-slate-100 "
-        ></div>
+        <div className="smallbox w-2 h-8 rounded-sm bg-slate-100 "></div>
       </div>
       <div className="top flex justify-center items-center gap-14">
         <div className="head text-lg text-slate-300">
           <p>07 Feb 2024</p>
         </div>
         <div className="head text-xl text-red-500">
-          <p>Registration End</p>
+          <p>Round 1 Start</p>
         </div>
         <div className="head text-lg text-slate-300">
-          <p>21 Feb 2024</p>
+          <p>28 Feb 2024</p>
         </div>
         <div className="head text-xl text-red-500">
           <p>Round 1 Results</p>
