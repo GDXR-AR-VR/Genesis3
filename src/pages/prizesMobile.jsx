@@ -30,13 +30,13 @@ export default function PrizesMobile() {
                 ></img>
                 <img
                   src={michael2}
-                  className="rounded-2xl  mr-10 mb-1 z-10 michael scale-150 xs:scale-110  object-cover"
+                  className="rounded-2xl  mr-10 mb-1 z-10 michael scale-150 custom2:scale-100 mt-10 xs:scale-110  object-cover"
                 ></img>
               </div>
             </div>
           </div>
         </div>
-        <p className="absolute top-1/2 mt-5 text-5xl text-nowrap -left-[200px] w-screen  text-white  font-extrabold Montserrat drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)]">
+        <p className="absolute top-1/2 mt-5 text-5xl text-nowrap  -left-[200px] w-screen  text-white  font-extrabold Montserrat drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)]">
           PRIZE . PRIZE . PRIZE . PRIZE . PRIZE . PRIZE . PRIZE . PRIZE .
         </p>
         <div className="flex w-full justify-evenly">

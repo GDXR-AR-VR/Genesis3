@@ -8,6 +8,7 @@ export default {
         "2xl": "2040px", // Custom 2xl breakpoint
         "2xs": "320px", // Custom 2xs breakpoint
         custom: "409px", // Custom xs breakpoint
+        custom2:"425px",
         xs: "376px",
       },
     },
