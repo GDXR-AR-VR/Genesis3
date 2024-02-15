@@ -39,7 +39,7 @@ export default function About() {
     >
       <div ref={boxRef} className=" w-1/2 relative flex justify-center ">
         <div className="absolute box -translate-x-[800px] lg:w-4/5 md:w-4/5 xl:w-[470px] xl:h-[550px] overflow-hidden">
-          <img src={michael} className="object-fill" />
+          <img alt="michael" src={michael} className="object-fill" />
         </div>
         <Circles />
       </div>

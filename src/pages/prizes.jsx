@@ -91,10 +91,12 @@ export default function Prizes() {
             <div className="absolute  top-4 left-4 border-2 z-10 bg-black overflow-hidden imgPrize rounded-[90px] lg:w-11/12 w-10/12 h-11/12 flex items-center align-middle justify-center">
               <img
                 src={gta6}
+                alt="gta6"
                 className="absolute bottom-10 scale-150 clear-both object-fill"
               ></img>
               <img
                 src={michael2}
+                alt="michael"
                 className="rounded-2xl xl:w-[400px] mr-10 mb-1 z-10 translate-x-[600px] michael"
               ></img>
             </div>

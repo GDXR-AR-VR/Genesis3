@@ -40,6 +40,7 @@ export default function Home() {
     >
       <img
         src={background}
+        alt="background"
         className="w-full absolute -top-10 drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)] z-10"
       ></img>
       {scrollPosition < screenHeight - difference && (
@@ -47,6 +48,7 @@ export default function Home() {
           <img
             className="absolute xl:scale-100 lg:scale-50 lg:-top-52 lg:left-32 -top-20 xl:left-64 -z-10 rotate-12 xl:-top-32"
             src={Slash}
+            alt="slash"
           ></img>
           Genesis
         </div>

@@ -26,10 +26,12 @@ export default function PrizesMobile() {
               <div className="absolute top-1 left-1 border-2 z-10 bg-black overflow-hidden imgPrize rounded-[30px] h-60 md:h-full flex items-center align-middle justify-center">
                 <img
                   src={gta6}
+                  alt="gta"
                   className="absolute bottom-10 scale-150 clear-both object-fill"
                 ></img>
                 <img
                   src={michael2}
+                  alt="michael"
                   className="rounded-2xl  mr-10 mb-1 z-10 michael scale-150 custom2:scale-100 mt-10 xs:scale-110  object-cover"
                 ></img>
               </div>

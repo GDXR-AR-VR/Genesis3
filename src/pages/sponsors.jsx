@@ -15,6 +15,7 @@ export default function Sponsors() {
       >
         <img
           src={beach}
+          alt="beach"
           className="absolute right-3 -top-40 object-cover"
         ></img>
         <div className="xl:h-1"></div>
@@ -35,6 +36,7 @@ export default function Sponsors() {
                   <div className="register w-[240px] h-[100px] border-2 items-center justify-center flex bg-red-500 mr-10">
                     <div className="register w-[230px] h-[90px] bg-white justify-center">
                       <img
+                      alt="sponsor"
                         src={sponsor}
                         className="w-full h-full p-4 mt-2 aspect-scale-1/1"
                       ></img>
@@ -50,6 +52,7 @@ export default function Sponsors() {
                     <div className="register w-[230px] h-[90px] bg-white justify-center">
                       <img
                         src={sponsor}
+                        alt="sponsor"
                         className="w-full h-full p-4 mt-2 aspect-scale-1/1"
                       ></img>
                     </div>
@@ -59,7 +62,7 @@ export default function Sponsors() {
             </div>
           </div>
           <div className="xl:w-5/12 w-5/12">
-            <img src={thanos} className="scale-75"></img>
+            <img src={thanos} alt="thanos" className="scale-75"></img>
           </div>
         </div>
 

@@ -11,6 +11,7 @@ export default function SponsorsMobile() {
     <div className="relative sponsorsMobile w-screen h-screen flex-col bg-[#ECE8E1] overflow-hidden text-black ">
       <img
         src={beach}
+        alt="beach"
         className="absolute scale-[2] right-40 bottom-40 md:scale-[1.5]"
       ></img>
       <div className="relative title text-5xl mt-8 ml-4  md:text-7xl Montserrat font-bold  lg:m-14">
@@ -31,6 +32,7 @@ export default function SponsorsMobile() {
                 <div className="register w-[170px] h-[70px] bg-white justify-center">
                   <img
                     src={sponsor}
+                    alt="sponsor"
                     className="w-full h-full mt-2 aspect-scale-1/1"
                   ></img>
                 </div>
@@ -45,6 +47,7 @@ export default function SponsorsMobile() {
                 <div className="register w-[170px] h-[70px] bg-white justify-center">
                   <img
                     src={sponsor}
+                    alt = "sponsor"
                     className="w-full h-full p-4 mt-2 aspect-scale-1/1"
                   ></img>
                 </div>

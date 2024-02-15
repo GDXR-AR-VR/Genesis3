@@ -17,7 +17,7 @@ export default function TimelineMobile() {
         </div>
         {/* Main Content */}
         <div className="flex-col w-full">
-          <img src={threepeople} className="md:w-1/2 m-auto"></img>
+          <img src={threepeople} alt="threepeople" className="md:w-1/2 m-auto"></img>
           <div className="w-full text-md text-white p-10 text-justify font-[BerlinSans]">
             Rev your engines and fasten your seatbelts as the GDXR Club
             kick-starts the Third Edition of Genesis – your ticket to a gaming

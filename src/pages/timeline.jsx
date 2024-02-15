@@ -38,7 +38,7 @@ export default function Timeline() {
         <div className="flex w-full xl:h-screen bg-white">
           <div className="relative flex-col w-1/2 bg-[#00022E] ">
             <div className="bg-white flex relative text-red-500 p-4  top-0 xl:text-8xl text-6xl w-full align-middle justify-center items-center rounded-br-[40px] lg:h-36"></div>
-            <img src={threepeople} className="absolute top-10"></img>
+            <img src={threepeople} alt="threepeople" className="absolute top-10"></img>
           </div>
           <div className="  relative bg-[#00022E] w-1/2  right-0 rounded-tl-[90px] flex-col h-full justify-center align-middle items-center">
             <div className="timeline translate-x-[400px] lg:text-7xl  xl:text-9xl mt-10 font-extrabold flex w-full  justify-center items-center font-[BerlinSans] text-red-500">

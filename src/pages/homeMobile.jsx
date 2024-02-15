@@ -40,6 +40,7 @@ export default function HomeMobile() {
       <div className="home relative  h-screen  flex-col justify-center overflow-hidden w-screen items-center  align-middle  text-white text-center ">
         <img
           src={backgroundHome}
+          alt="background"
           className="absolute h-full scale-[1.3] md:scale-[1.2] md:top-0 -top-10 object-cover bg-gradient-to-b from-black via-black to-transparent"
         ></img>
         <div>
@@ -50,6 +51,7 @@ export default function HomeMobile() {
                 <img
                   className="absolute scale-75 md:scale-[0.6] md:-top-48 md:-left-10 -top-28  -left-16 -z-10 rotate-12 xl:-top-48"
                   src={Slash}
+                  alt="slash"
                 ></img>
                 Genesis
               </div>
@@ -72,7 +74,7 @@ export default function HomeMobile() {
           <div
             className="apply-button h-20 w-60"
             data-hackathon-slug="genesis-iii"
-            data-button-theme="light"
+            data-button-theme="dark"
           ></div>
         </div>
         <div className=" z-10 font-[Pricedown]"></div>
