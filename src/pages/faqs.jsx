@@ -7,7 +7,7 @@ export default function Faqs() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentOpen] = useState(0);
   const optionArr = [
-    { title: "Sponsor Us", link: "" },
+    { title: "Sponsor Us", link: "\\sponsorus" },
     { title: "Contact Us", link: "#footer" },
     {
       title: "Register",
@@ -25,6 +25,11 @@ export default function Faqs() {
       answer:
         "The Game Development and Extended Reality (GDXR) Club at the Army Institute of Technology (AIT) in Pune is a student-run organization dedicated to fostering interest and expertise in game development, virtual reality (VR), and augmented reality (AR). The club provides a platform for students to learn, collaborate, and create innovative projects in these rapidly evolving fields",
     },
+    {
+      question:"What is a Game JAM?",
+      answer:
+      "Seriously?"
+    }
   ];
   return (
     <>
