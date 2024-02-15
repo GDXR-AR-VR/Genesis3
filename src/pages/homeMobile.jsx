@@ -60,22 +60,24 @@ export default function HomeMobile() {
         </div>
         <div className="md:h-44 h-40"></div>
         <div className="md:h-10 z-10"></div>
-        <div className="w-full mt-20 mb-10 z-20 flex justify-center">
+        <div className="w-full mt-20 mb-20 z-20 flex-col items-center justify-center">
           <div>
             <div
               onClick={() => {
                 window.open(registerationLink, "_blank");
               }}
-              className="register  bg-red-600   w-[150px] h-[50px]  text-3xl p-3  font-[BerlinSans] font-bold text-center"
+              className="register m-auto bg-red-600 mb-5 w-[150px] h-[50px]  text-3xl p-3  font-[BerlinSans] font-bold text-center"
             >
               <p> Register</p>
             </div>
           </div>
-          <div
-            className="apply-button h-20 w-60"
-            data-hackathon-slug="genesis-iii"
-            data-button-theme="dark"
-          ></div>
+          <div className="w-full">
+            <div
+              className=" apply-button h-20 w-60"
+              data-hackathon-slug="genesis-iii"
+              data-button-theme="dark"
+            ></div>
+          </div>
         </div>
         <div className=" z-10 font-[Pricedown]"></div>
         <div className="z-20  relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-xl">
