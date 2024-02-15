@@ -26,10 +26,10 @@ export default function HomeMobile() {
   }, []);
   return (
     <>
-      <div className="home relative  h-screen  flex-col justify-center overflow-hidden  items-center  align-middle  text-white text-center bg-gradient-to-t from-black to-transparent">
+      <div className="home relative  h-screen  flex-col justify-center overflow-hidden w-screen items-center  align-middle  text-white text-center bg-gradient-to-t from-black to-transparent">
         <img
           src={backgroundHome}
-          className="absolute h-screen scale-[5.4] md:scale-[2] md:top-0 -bottom-16 object-contain"
+          className="absolute h-full scale-[1.3] md:scale-[1] md:top-0 -top-32 -bottom-16 object-cover bg-gradient-to-b from-black via-black to-transparent"
         ></img>
         <div>
           <div className="md:h-10 h-5"></div>

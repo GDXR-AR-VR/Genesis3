@@ -3,7 +3,7 @@ import TimelineMobileComponent from "../components/timelineMobile";
 export default function TimelineMobile() {
   return (
     <>
-      <div className="timeline relative  select-none flex-col justify-center overflow-hidden bg-[#00022E] items-center align-middle  text-center">
+      <div className="timeline relative w-screen select-none flex-col justify-center overflow-hidden bg-[#00022E] items-center align-middle  text-center">
         {/* Title */}
         <div className="flex bg-white">
           <div className="w-2/3 bg-white ">
