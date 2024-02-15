@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function FooterMobile() {
   return (
     <>
-      <div className="flex-col bg-black text-white font-[BerlinSans] text-center">
+      <div id="contactus" className="flex-col bg-black text-white font-[BerlinSans] text-center">
         <div className="h-7"></div>
         <div className="mb-7">PRESENTED BY</div>
         <div className="flex justify-center items-center">
