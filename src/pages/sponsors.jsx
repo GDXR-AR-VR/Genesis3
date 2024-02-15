@@ -5,8 +5,12 @@ import devfolio from "../assets/devfolio.svg";
 import ethindia from "../assets/ethindia.svg";
 import maidaan from "../assets/maidaan.svg";
 export default function Sponsors() {
-  const goldSponsor = [polygon, devfolio, ethindia];
-  const titleSponsor = [maidaan];
+  const goldSponsor = [
+    { value: polygon, alt: "polygon" },
+    { value: devfolio, alt: "devfolio" },
+    { value: ethindia, alt: "ethindia" },
+  ];
+  const titleSponsor = [{ value: maidaan, alt: "maidaan" }];
   return (
     <>
       <div
@@ -36,8 +40,8 @@ export default function Sponsors() {
                   <div className="register w-[240px] h-[100px] border-2 items-center justify-center flex bg-red-500 mr-10">
                     <div className="register w-[230px] h-[90px] bg-white justify-center">
                       <img
-                      alt="sponsor"
-                        src={sponsor}
+                        src={sponsor.value}
+                        alt={sponsor.alt}
                         className="w-full h-full p-4 mt-2 aspect-scale-1/1"
                       ></img>
                     </div>
@@ -51,8 +55,8 @@ export default function Sponsors() {
                   <div className="register w-[240px] h-[100px] border-2 items-center justify-center flex bg-red-500 mr-10">
                     <div className="register w-[230px] h-[90px] bg-white justify-center">
                       <img
-                        src={sponsor}
-                        alt="sponsor"
+                        src={sponsor.value}
+                        alt={sponsor.alt}
                         className="w-full h-full p-4 mt-2 aspect-scale-1/1"
                       ></img>
                     </div>
