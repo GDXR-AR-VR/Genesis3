@@ -1,6 +1,11 @@
 import beach from "../assets/beach.svg";
 import thanos from "../assets/thanos.png";
+import polygon from "../assets/polygon.svg";
+import devfolio from "../assets/devfolio.svg";
+import ethindia from "../assets/ethindia.svg";
+
 export default function Sponsors() {
+  const goldSponsor = [polygon, devfolio, ethindia];
   return (
     <>
       <div
@@ -28,7 +33,19 @@ export default function Sponsors() {
                 </div>
               </div>
               <div>Platinum Sponsor</div>
-              <div>Premium Sponsor</div>
+              <div>Gold Sponsor</div>
+              <div className="flex">
+                {goldSponsor.map((sponsor) => (
+                  <div className="register w-[240px] h-[100px] border-2 items-center justify-center flex bg-red-500 mr-10">
+                    <div className="register w-[230px] h-[90px] bg-white justify-center">
+                      <img
+                        src={sponsor}
+                        className="w-full h-full p-4 mt-2 aspect-scale-1/1"
+                      ></img>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           <div className="xl:w-5/12 w-5/12">
