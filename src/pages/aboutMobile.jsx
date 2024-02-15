@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function AboutMobile() {
   return (
     <>
-      <div className="about relative select-none flex-col justify-center overflow-hidden items-center imgAboutMobile bg-black align-middle  text-white text-center">
+      <div className="about relative w-screen select-none flex-col justify-center overflow-hidden items-center imgAboutMobile bg-black align-middle  text-white text-center">
         <div className="relative title text-center w-full xl:mt-20 ">
           <div className="absolute left-6  text-white text-5xl xs:text-6xl Montserrat font-bold">
             About{" "}

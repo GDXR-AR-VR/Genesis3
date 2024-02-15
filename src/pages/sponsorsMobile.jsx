@@ -7,7 +7,7 @@ import ShapedButton, { SponsorButton } from "../components/shapedButton";
 export default function SponsorsMobile() {
   const goldSponsor = [polygon, devfolio, ethindia];
   return (
-    <div className="relative sponsorsMobile h-screen flex-col bg-[#ECE8E1] overflow-hidden text-black ">
+    <div className="relative sponsorsMobile w-screen h-screen flex-col bg-[#ECE8E1] overflow-hidden text-black ">
       <img
         src={beach}
         className="absolute scale-[2] right-40 bottom-40 md:scale-[1.5]"
@@ -29,7 +29,7 @@ export default function SponsorsMobile() {
           </div>
           <div>Platinum Sponsor</div>
           <div>Gold Sponsor</div>
-          <div className="flex ml-10">
+          <div className="flex ml-5 w-full flex-wrap">
             {goldSponsor.map((sponsor) => (
               <div className="register w-[180px] h-[80px] border-2 items-center justify-center flex bg-red-500 mr-10">
                 <div className="register w-[170px] h-[70px] bg-white justify-center">
