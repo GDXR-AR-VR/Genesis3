@@ -36,7 +36,7 @@ export default function PrizesMobile() {
             </div>
           </div>
         </div>
-        <p className="absolute top-1/2 text-5xl text-nowrap -left-[200px] w-screen  text-white  font-extrabold Montserrat drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)]">
+        <p className="absolute top-1/2 mt-5 text-5xl text-nowrap -left-[200px] w-screen  text-white  font-extrabold Montserrat drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.8)]">
           PRIZE . PRIZE . PRIZE . PRIZE . PRIZE . PRIZE . PRIZE . PRIZE .
         </p>
         <div className="flex w-full justify-evenly">
@@ -46,7 +46,7 @@ export default function PrizesMobile() {
             prizeAmount={"12,500"}
             width={"w-[45%]"}
             height={"xs:h-44 h-36"}
-            text={"text-lg md:text-2xl hidden xs:block"}
+            text={"text-lg md:text-2xl hidden custom:block"}
           />
           <PrizeComponent
             color={"bg-red-500"}
@@ -54,7 +54,7 @@ export default function PrizesMobile() {
             prizeAmount={"10,000"}
             width={"w-[45%]"}
             height={"xs:h-44 h-36"}
-            text={"text-lg md:text-2xl hidden xs:block"}
+            text={"text-lg md:text-2xl hidden custom:block"}
           />
         </div>
         <div className=" w-full flex select-none md:mt-2 text-gray-500 font-bold font-[BerlinSans] text-center text-lg md:text-2xl">

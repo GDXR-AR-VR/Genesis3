@@ -36,13 +36,13 @@ export default function Counter() {
   return (
     <>
       <div className="relative flex justify-center font-[BerlinSans] w-screen z-20">
-        <div className="md:flex grid grid-cols-2  m-auto lg:gap-10 xl:gap-16 md:gap-8 gap-20">
+        <div className="md:flex grid grid-cols-2  m-auto lg:gap-10 xl:gap-16 md:gap-8 gap-10">
           {arr.map((item, index) => {
             return (
               <>
                 <div
                   key={index}
-                  className="relative flex-col justify-center items-center align-middle text-center w-36 lg:w-52 lg:mt-20 md:mt-16 drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)]"
+                  className="relative flex-col justify-center items-center align-middle text-center w-36 lg:w-52 mt-5 lg:mt-20 md:mt-16 drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)]"
                 >
                   <div
                     key={index + item.value}

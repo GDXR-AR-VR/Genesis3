@@ -37,7 +37,7 @@ export default function Sponsors() {
         </div>
 
         <div className="w-full h-40 z-10 relative">
-          <div className="register absolute xl:-top-32 xl:left-[660px] lg:w-[220px] lg:h-[70px] lg:top-10 lg:left-[400px] xl:w-[240px] w-52 h-52 bg-red-500 font-[BerlinSans] text-white xl:h-[100px] xl:text-5xl select-none xl:p-3 lg:p-10 items-center text-center align-middle justify-center flex lg:text-3xl">
+          <div className="register absolute xl:-top-32 xl:left-[660px] lg:w-[220px] lg:h-[70px] lg:top-10 lg:left-[400px] xl:w-[240px] w-52 h-52 bg-red-500 font-[BerlinSans] text-white xl:h-[90px] xl:text-5xl select-none xl:p-3 lg:p-10 items-center text-center align-middle justify-center flex lg:text-3xl">
             Sponsor Us
           </div>
         </div>
