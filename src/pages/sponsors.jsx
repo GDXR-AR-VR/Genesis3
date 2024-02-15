@@ -43,7 +43,7 @@ export default function Sponsors() {
                       <img
                         src={sponsor.value}
                         alt={sponsor.alt}
-                        className="w-full h-full p-4 mt-2 aspect-scale-1/1"
+                        className="w-full h-full  mt-2 aspect-scale-1/1"
                       ></img>
                     </div>
                   </div>
@@ -74,9 +74,9 @@ export default function Sponsors() {
         <motion.div
           whileHover={{ rotate: Math.random() * 3, scale: 1.1 }}
           onClick={() => {
-            window.open("", "_blank");
+            window.open("\\sponsorus", "_blank");
           }}
-          className=" relative register bg-red-500 m-auto text-white w-fit h-12 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 text-xl md:text-2xl p-3 font-[BerlinSans] font-bold text-center z-30"
+          className=" relative register select-none bg-red-500 m-auto text-white w-fit h-12 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 text-xl md:text-2xl p-3 font-[BerlinSans] font-bold text-center z-30"
         >
           Sponsor Us
         </motion.div>

@@ -9,14 +9,14 @@ export default function SponsorUs() {
     <>
       <div className="sponsors relative flex-col h-screen w-screen bg-[#ECE8E1] font-[BerlinSans] overflow-hidden  ">
         <img
-          className="absolute scale-[1.2] xl:scale-[1] object-contain"
+          className="absolute scale-[3.4] xs:scale-[3] top-52 xs:top-48 md:top-0 md:scale-[1.8] lg:scale-[1.2] xl:scale-[1] object-contain"
           src={sponsorUs}
         ></img>
         <div className="h-16"></div>
-        <div className="relative title lg:text-7xl xl:text-8xl mb-3 text-white font-extrabold text-center ">
+        <div className="relative title md:text-7xl text-5xl xs:text-6xl xl:text-8xl mb-3 text-white font-extrabold text-center ">
           SPONSOR US
         </div>
-        <div className=" glass rounded-3xl border-[1px] p-4 justify-center select-none items-center align-middle m-auto w-[400px] z-20 flex-col gap-4">
+        <div className=" glass rounded-3xl border-[1px] p-4 justify-center select-none items-center align-middle m-auto w-9/12 md:w-[400px] z-20 flex-col gap-4">
           <p className="text-white">Name of Organisation</p>
           <input
             // name="name "
@@ -49,7 +49,7 @@ export default function SponsorUs() {
             className="h-12 w-full rounded-xl p-2"
           ></textarea>
           <br />
-          <div className="w-full mt-10 justify-center">
+          <div className="w-full md:mt-10 justify-center">
             <motion.div
               whileHover={{ scale: 1.1 }}
               type="submit"
