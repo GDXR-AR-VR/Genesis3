@@ -3,9 +3,10 @@ import thanos from "../assets/thanos.png";
 import polygon from "../assets/polygon.svg";
 import devfolio from "../assets/devfolio.svg";
 import ethindia from "../assets/ethindia.svg";
-import ShapedButton, { SponsorButton } from "../components/shapedButton";
+import maidaan from "../assets/maidaan.svg";
 export default function SponsorsMobile() {
   const goldSponsor = [polygon, devfolio, ethindia];
+  const titleSponsor = [maidaan];
   return (
     <div className="relative sponsorsMobile w-screen h-screen flex-col bg-[#ECE8E1] overflow-hidden text-black ">
       <img
@@ -24,14 +25,23 @@ export default function SponsorsMobile() {
           <div>
             <p className="text-[#3E3E3E] ml-10">Title Sponsor</p>
           </div>
-          <div className="flex">
-            <SponsorButton text="Register" />
+          <div className="flex ml-5 w-full flex-wrap">
+            {titleSponsor.map((sponsor) => (
+              <div className="register w-[180px] h-[80px]  items-center justify-center flex bg-red-500 mr-10">
+                <div className="register w-[170px] h-[70px] bg-white justify-center">
+                  <img
+                    src={sponsor}
+                    className="w-full h-full mt-2 aspect-scale-1/1"
+                  ></img>
+                </div>
+              </div>
+            ))}
           </div>
-          <div>Platinum Sponsor</div>
-          <div>Gold Sponsor</div>
+          <div className="text-[#3E3E3E] ml-10">Platinum Sponsor</div>
+          <div className="text-[#3E3E3E] ml-10">Gold Sponsor</div>
           <div className="flex ml-5 w-full flex-wrap">
             {goldSponsor.map((sponsor) => (
-              <div className="register w-[180px] h-[80px] border-2 items-center justify-center flex bg-red-500 mr-10">
+              <div className="register w-[180px] h-[80px] items-center justify-center flex bg-red-500 mr-10">
                 <div className="register w-[170px] h-[70px] bg-white justify-center">
                   <img
                     src={sponsor}
