@@ -17,7 +17,7 @@ export default function Navbar() {
     },
     {
       item: "GDXR",
-      link: "gdxr",
+      link: "https://linktr.ee/GenesisIII",
     },
 
     {
@@ -54,7 +54,11 @@ export default function Navbar() {
             return (
               <motion.div
                 key={index}
-                className="w-1/7 text-center select-none"
+                className={`w-1/7 text-center select-none ${
+                  obj.item === "GDXR"
+                    ? "font-extrabold text-red-500 text-4xl"
+                    : "font-normal"
+                }`}
                 whileHover={{
                   scale: 1.2,
                   opacity: 1,
@@ -62,7 +66,9 @@ export default function Navbar() {
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  window.location.href = `#${obj.link}`;
+                  if (obj.item === "GDXR") {
+                    window.open(obj.link, "_blank");
+                  } else window.location.href = `#${obj.link}`;
                 }}
               >
                 {obj.item}

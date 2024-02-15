@@ -9,12 +9,15 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <>
-      <div className="flex-col bg-black text-white font-[BerlinSans] text-center">
+      <div
+        id="contactus"
+        className="flex-col bg-black text-white font-[BerlinSans] text-center"
+      >
         <div className="h-7"></div>
         <div className="mb-7">PRESENTED BY</div>
         <div className="flex justify-center items-center">
           <div className="h-0.5 bg-white w-1/4"></div>
-          <div className="text-4xl font-extrabold pl-4 pr-4">GDXR</div>
+          <div className="text-5xl font-extrabold pl-4 pr-4">GDXR</div>
           <div className="h-0.5 bg-white w-1/4"></div>
         </div>
         <div className="flex justify-evenly mt-10">

@@ -1,9 +1,9 @@
 import CountdownTimer from "../components/timer";
 import background from "../assets/background.svg";
 import Slash from "../assets/slash.svg";
-import { useEffect, useState,Suspense } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { motion } from "framer-motion";
-import Loading from  "../components/loading"
+import Loading from "../components/loading";
 export default function Home() {
   const registerationLink =
     "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235";
@@ -37,14 +37,14 @@ export default function Home() {
   return (
     <div
       id="home"
-      className="home h-screen select-none flex-col justify-center items-center align-middle text-white text-center imgHome"
+      className="home h-screen select-none flex-col justify-center items-center overflow-hidden align-middle text-white text-center imgHome"
     >
       <Suspense fallback={Loading}>
-      <img
-        src={background}
-        alt="background"
-        className="w-full absolute -top-10 drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)] z-10"
-      ></img>
+        <img
+          src={background}
+          alt="background"
+          className="w-full absolute -top-10 drop-shadow-[0_0.2px_0.2px_rgba(0,0,0,0.8)] z-10 object-cover"
+        ></img>
       </Suspense>
       {scrollPosition < screenHeight - difference && (
         <div className=" xl:mt-28  mt-20 select-none fixed m-auto w-screen text-7xl lg:text-[120px] xl:text-[200px] align-middle text-center font-[Pricedown]">
@@ -66,11 +66,13 @@ export default function Home() {
       >
         Register
       </motion.div>
-      <div
-        className="apply-button h-20 w-60"
-        data-hackathon-slug="genesis-iii"
-        data-button-theme="light"
-      ></div>
+      <div className="w-full">
+        <div
+          className="apply-button h-20 w-60 m-auto"
+          data-hackathon-slug="genesis-iii"
+          data-button-theme="light"
+        ></div>
+      </div>
       <div className="lg:h-16 z-10 font-[Pricedown]"></div>
       <div className="z-20  relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-2xl">
         COMMENCING IN

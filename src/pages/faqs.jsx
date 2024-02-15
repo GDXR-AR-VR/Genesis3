@@ -8,7 +8,7 @@ export default function Faqs() {
   const [currentIndex, setCurrentOpen] = useState(0);
   const optionArr = [
     { title: "Sponsor Us", link: "" },
-    { title: "Contact Us", link: "#contactus" },
+    { title: "Contact Us", link: "#footer" },
     {
       title: "Register",
       link: "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235",
@@ -18,12 +18,12 @@ export default function Faqs() {
     {
       question: "What is Genesis?",
       answer:
-        "Rev your engines and fasten your seatbelts as the GDXR Club kick-starts the Third Edition of Genesis – your ticket to a gaming adventure that hits closer to home than ever! Returning after the 2022 Last Edition, this 2024 Genesis isn't just about pixels and coding; it's about bringing the spirit of gaming to life.",
+        "Immersive Gaming Fest: A Journey into the World of Virtual Adventures. Genesis, an annual event by AIT's GDXR Club, gathers tech-savvy college students passionate about AR/VR and gaming. Participants compete in two rounds: idea pitching and game development, aiming to create captivating games to engage audiences.",
     },
     {
       question: "What is GDXR?",
       answer:
-        "GDXR is a student-run club at the Army Institute of Technology that aims to bring together students who share a passion for gaming and technology. Our goal is to provide a platform for students to connect, learn, and grow in the gaming industry.",
+        "The Game Development and Extended Reality (GDXR) Club at the Army Institute of Technology (AIT) in Pune is a student-run organization dedicated to fostering interest and expertise in game development, virtual reality (VR), and augmented reality (AR). The club provides a platform for students to learn, collaborate, and create innovative projects in these rapidly evolving fields",
     },
   ];
   return (
@@ -89,7 +89,9 @@ export default function Faqs() {
                 <motion.div
                   whileHover={{ rotate: Math.random() * 3, scale: 1.1 }}
                   onClick={() => {
-                    window.open(item.link, "_blank");
+                    if (item.title !== "Contact Us") {
+                      window.open(item.link, "_blank");
+                    } else window.location.href = "#contactus";
                   }}
                   className=" relative register mt-10 bg-red-500 m-auto text-white w-fit h-12 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 text-xl md:text-2xl p-3 md:mt-20 font-[BerlinSans] font-bold text-center z-30"
                 >
