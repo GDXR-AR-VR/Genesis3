@@ -14,7 +14,7 @@ import PrizesMobile from "./pages/prizesMobile";
 import TimelineMobile from "./pages/timelineMobile";
 import SponsorsMobile from "./pages/sponsorsMobile";
 import FooterMobile from "./pages/footerMobile";
-
+import { Suspense } from "react";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   useState(() => {
@@ -27,22 +27,26 @@ function App() {
         {width >= 800 ? (
           <>
             <Home />
-            <About />
-            <Prizes />
-            <Timeline />
-            <Sponsors />
-            <Faqs />
-            <Footer />
+            <Suspense fallback={Home}>
+              <About />
+              <Prizes />
+              <Timeline />
+              <Sponsors />
+              <Faqs />
+              <Footer />
+            </Suspense>
           </>
         ) : (
           <>
             <HomeMobile />
-            <AboutMobile />
-            <PrizesMobile />
-            <TimelineMobile />
-            <SponsorsMobile />
-            <Faqs />
-            <FooterMobile />
+            <Suspense fallback={HomeMobile}>
+              <AboutMobile />
+              <PrizesMobile />
+              <TimelineMobile />
+              <SponsorsMobile />
+              <Faqs />
+              <FooterMobile />
+            </Suspense>
           </>
         )}
 

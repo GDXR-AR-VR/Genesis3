@@ -3,6 +3,7 @@ import gta6 from "../assets/background2.png";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 export default function Prizes() {
   useEffect(() => {
