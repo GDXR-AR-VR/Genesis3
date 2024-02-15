@@ -14,7 +14,7 @@ export default function HomeMobile() {
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
-      // console.log(position);
+      
       setScrollPosition(position);
     };
 
