@@ -24,6 +24,17 @@ export default function HomeMobile() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <>
       <div className="home relative  h-screen  flex-col justify-center overflow-hidden w-screen items-center  align-middle  text-white text-center ">
@@ -58,6 +69,11 @@ export default function HomeMobile() {
               <p> Register</p>
             </div>
           </div>
+          <div
+            className="apply-button h-20 w-60"
+            data-hackathon-slug="genesis-iii"
+            data-button-theme="light"
+          ></div>
         </div>
         <div className=" z-10 font-[Pricedown]"></div>
         <div className="z-20  relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-xl">

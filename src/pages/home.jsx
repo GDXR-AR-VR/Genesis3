@@ -11,6 +11,16 @@ export default function Home() {
   const difference = screenHeight < 900 ? 500 : 300;
   console.log(screenHeight);
   useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
       // console.log(position);
@@ -41,7 +51,7 @@ export default function Home() {
           Genesis
         </div>
       )}
-      <div className="xl:h-64 lg:h-40 z-10"></div>
+      <div className="xl:h-64 lg:h-40 z-10 flex"></div>
       <motion.div
         whileHover={{ rotate: Math.random() * 3, scale: 1.1 }}
         onClick={() => {
@@ -51,6 +61,11 @@ export default function Home() {
       >
         Register
       </motion.div>
+      <div
+        className="apply-button h-20 w-60"
+        data-hackathon-slug="genesis-iii"
+        data-button-theme="light"
+      ></div>
       <div className="lg:h-16 z-10 font-[Pricedown]"></div>
       <div className="z-20  relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-2xl">
         COMMENCING IN
