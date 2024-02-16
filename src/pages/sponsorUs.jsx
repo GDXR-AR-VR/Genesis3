@@ -52,7 +52,14 @@ export default function SponsorUs() {
   return (
     <>
       <div className="sponsors relative flex-col h-screen w-screen bg-[#ECE8E1] font-[BerlinSans] overflow-hidden  ">
-        <div className="text-white z-20 absolute top-5">Home</div>
+        <div
+          className="text-white z-20 absolute top-5 left-5 xl:text-5xl text-3xl select-none"
+          onClick={() => {
+            window.open("https://www.genesis3.tech");
+          }}
+        >
+          Home
+        </div>
         <img
           className="absolute scale-[3.4] xs:scale-[3] top-52 xs:top-48 md:top-0 md:scale-[1.8] lg:scale-[1.2] xl:scale-[1] object-contain"
           src={sponsorUs}
