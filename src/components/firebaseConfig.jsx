@@ -1,13 +1,13 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { setDoc, collection, doc } from "firebase/firestore";
+import { setDoc, collection ,doc} from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
+  apiKey: "AIzaSyDP63Jr4i_Z0k1sB-IiDSHLzlCgf6CdjpA",
   authDomain: "genesis-iii.firebaseapp.com",
   projectId: "genesis-iii",
   storageBucket: "genesis-iii.appspot.com",
