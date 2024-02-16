@@ -36,6 +36,7 @@ export default function SponsorUs() {
       email.current.value = "";
       phone.current.value = "";
       email.current.value = "";
+      desc.current.value = "";
       contribution.current.value = "";
       expectation.current.value = "";
     } else {
