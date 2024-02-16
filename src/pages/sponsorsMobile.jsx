@@ -1,12 +1,8 @@
 import beach from "../assets/beach.svg";
 import thanos from "../assets/thanos.png";
-import polygon from "../assets/polygon.svg";
-import devfolio from "../assets/devfolio.svg";
-import ethindia from "../assets/ethindia.svg";
-import maidaan from "../assets/maidaan.svg";
+import {goldSponsor, titleSponsor,bronzeSponsor} from "../components/sponsors";
 export default function SponsorsMobile() {
-  const goldSponsor = [polygon, devfolio, ethindia];
-  const titleSponsor = [maidaan];
+
   return (
     <div className="relative sponsorsMobile w-screen h-screen flex-col bg-[#ECE8E1] overflow-hidden text-black ">
       <img
@@ -39,10 +35,24 @@ export default function SponsorsMobile() {
               </div>
             ))}
           </div>
-          <div className="text-[#3E3E3E] ml-10">Platinum Sponsor</div>
+          
           <div className="text-[#3E3E3E] ml-10">Gold Sponsor</div>
           <div className="flex ml-5 w-full flex-wrap justify-center">
             {goldSponsor.map((sponsor) => (
+              <div className="register w-[160px] h-[70px]  items-center justify-center align-middle flex bg-red-500 mr-10">
+                <div className="register w-[150px] h-[60px] bg-white justify-center">
+                  <img
+                    src={sponsor}
+                    alt="sponsor"
+                    className="w-full h-full p-4 mt-2 aspect-scale-1/1"
+                  ></img>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-[#3E3E3E] ml-10">Bronze Sponsor</div>
+          <div className="flex ml-5 w-full flex-wrap justify-center">
+            {bronzeSponsor.map((sponsor) => (
               <div className="register w-[160px] h-[70px]  items-center justify-center align-middle flex bg-red-500 mr-10">
                 <div className="register w-[150px] h-[60px] bg-white justify-center">
                   <img
