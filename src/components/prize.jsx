@@ -13,7 +13,7 @@ export default function PrizeComponent({
       >
         <div className="text-black md:text-5xl  p-2 text-3xl xs:text-4xl m-auto">
           {prize}
-          <span className=" align-super text-3xl md:text-4xl"> st</span> Prize
+          <span className=" align-super text-3xl md:text-4xl"> {prize === 1 ? "st":prize === 2? "nd" : "rd"}</span> Prize
         </div>
         <div className="m-auto h-1 w-5/6 bg-black"></div>
         <div className="text-white text-3xl xs:text-5xl md:text-6xl lg:text-5xl  m-auto flex-col ">
