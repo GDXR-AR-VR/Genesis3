@@ -27,7 +27,7 @@ export default function SponsorsMobile() {
               <div className="register w-[160px] h-[70px]  items-center justify-center flex bg-red-500 mr-10">
                 <div className="register w-[150px] h-[60px] bg-white justify-center">
                   <img
-                    src={sponsor}
+                    src={sponsor.value}
                     alt="sponsor"
                     className="w-full h-full mt-2 aspect-scale-1/1"
                   ></img>
@@ -42,7 +42,7 @@ export default function SponsorsMobile() {
               <div className="register w-[160px] h-[70px]  items-center justify-center align-middle flex bg-red-500 mr-10">
                 <div className="register w-[150px] h-[60px] bg-white justify-center">
                   <img
-                    src={sponsor}
+                    src={sponsor.value}
                     alt="sponsor"
                     className="w-full h-full p-4 mt-2 aspect-scale-1/1"
                   ></img>
@@ -56,7 +56,7 @@ export default function SponsorsMobile() {
               <div className="register w-[160px] h-[70px]  items-center justify-center align-middle flex bg-red-500 mr-10">
                 <div className="register w-[150px] h-[60px] bg-white justify-center">
                   <img
-                    src={sponsor}
+                    src={sponsor.value}
                     alt="sponsor"
                     className="w-full h-full p-4 mt-2 aspect-scale-1/1"
                   ></img>
