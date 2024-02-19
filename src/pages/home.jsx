@@ -10,7 +10,7 @@ export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const screenHeight = window.innerHeight;
   const difference = screenHeight < 900 ? 500 : 300;
-  console.log(screenHeight);
+  // console.log(screenHeight);
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -78,7 +78,7 @@ export default function Home() {
           marginTop: "20px",
         }}
         // className="apply-button"
-        className="apply-button relative border-2  m-auto lg:w-40 lg:h-16 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 w-28 h-8 text-2xl p-0.5 mt-5 font-[BerlinSans] font-bold text-center z-30"
+        className="apply-button relative  m-auto lg:w-40 lg:h-16 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 w-28 h-8 text-2xl p-0.5 mt-5 font-[BerlinSans] font-bold text-center z-30"
       ></div>
 
       <div className="w-full"></div>

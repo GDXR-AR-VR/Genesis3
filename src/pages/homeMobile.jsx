@@ -60,7 +60,7 @@ export default function HomeMobile() {
         </div>
         <div className="md:h-44 h-40"></div>
         <div className="md:h-10 z-10"></div>
-        <div className="w-full mt-20 mb-20 z-20 flex-col items-center justify-center">
+        <div className="w-full mt-20 mb-10 z-20 flex-col items-center justify-center">
           <div>
             <div
               onClick={() => {
@@ -71,16 +71,16 @@ export default function HomeMobile() {
               <p> Register</p>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-full z-20 border-2 flex">
             <div
-              className="apply-button h-20 w-60"
+              className=" apply-button h-10 w-60 z-20 m-auto"
               data-hackathon-slug="genesis-iii"
               data-button-theme="dark"
             ></div>
           </div>
         </div>
         <div className=" z-10 font-[Pricedown]"></div>
-        <div className="z-20  relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-xl">
+        <div className="z-20 relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-xl">
           COMMENCING IN
         </div>
         <CountdownTimer />
