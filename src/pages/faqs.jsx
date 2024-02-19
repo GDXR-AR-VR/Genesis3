@@ -11,7 +11,8 @@ export default function Faqs() {
     { title: "Contact Us", link: "#footer" },
     {
       title: "Register",
-      link: "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235",
+      // link: "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235",
+      link : "https://linktr.ee/GenesisIII"
     },
   ];
   const arr = [

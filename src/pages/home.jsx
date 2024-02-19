@@ -5,22 +5,14 @@ import { useEffect, useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import Loading from "../components/loading";
 export default function Home() {
-  const registerationLink =
-    "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235";
+  // "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235"
+  const registerationLink = "https://linktr.ee/GenesisIII";
+    ;
   const [scrollPosition, setScrollPosition] = useState(0);
   const screenHeight = window.innerHeight;
   const difference = screenHeight < 900 ? 500 : 300;
   // console.log(screenHeight);
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
@@ -66,20 +58,7 @@ export default function Home() {
       >
         Register
       </motion.div>
-      <div
-        data-hackathon-slug="genesis-iii"
-        data-button-theme="light"
-        style={{
-          height: "44px",
-          width: "312px",
-          borderWidth: "2px",
-          // zIndex: "3",
-          margin: "auto",
-          marginTop: "20px",
-        }}
-        // className="apply-button"
-        className="apply-button relative  m-auto lg:w-40 lg:h-16 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 w-28 h-8 text-2xl p-0.5 mt-5 font-[BerlinSans] font-bold text-center z-30"
-      ></div>
+      
 
       <div className="w-full"></div>
       <div className="lg:h-16 z-10 font-[Pricedown]"></div>

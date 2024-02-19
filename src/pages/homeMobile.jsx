@@ -6,8 +6,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 export default function HomeMobile() {
-  const registerationLink =
-    "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235";
+  // const registerationLink =
+  //   "https://unstop.com/hackathons/genesis-iii-army-institute-of-technology-ait-pune-895235";
+  const registerationLink = "https://linktr.ee/GenesisIII";
   const [scrollPosition, setScrollPosition] = useState(0);
   const screenHeight = window.innerHeight;
   const difference = 0;
@@ -25,16 +26,7 @@ export default function HomeMobile() {
     };
   }, []);
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+
   return (
     <>
       <div className="home relative    flex-col justify-center overflow-hidden w-screen items-center  align-middle  text-white text-center ">
@@ -71,13 +63,7 @@ export default function HomeMobile() {
               <p> Register</p>
             </div>
           </div>
-          <div className="w-full z-20 border-2 flex">
-            <div
-              className=" apply-button h-10 w-60 z-20 m-auto"
-              data-hackathon-slug="genesis-iii"
-              data-button-theme="dark"
-            ></div>
-          </div>
+          
         </div>
         <div className=" z-10 font-[Pricedown]"></div>
         <div className="z-20 relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-xl">
