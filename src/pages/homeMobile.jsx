@@ -14,7 +14,7 @@ export default function HomeMobile() {
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
-      
+
       setScrollPosition(position);
     };
 
@@ -37,7 +37,7 @@ export default function HomeMobile() {
   }, []);
   return (
     <>
-      <div className="home relative  h-screen  flex-col justify-center overflow-hidden w-screen items-center  align-middle  text-white text-center ">
+      <div className="home relative    flex-col justify-center overflow-hidden w-screen items-center  align-middle  text-white text-center ">
         <img
           src={backgroundHome}
           alt="background"
@@ -73,7 +73,7 @@ export default function HomeMobile() {
           </div>
           <div className="w-full">
             <div
-              className=" apply-button h-20 w-60"
+              className="apply-button h-20 w-60"
               data-hackathon-slug="genesis-iii"
               data-button-theme="dark"
             ></div>
