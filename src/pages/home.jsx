@@ -69,9 +69,16 @@ export default function Home() {
       <div
         data-hackathon-slug="genesis-iii"
         data-button-theme="light"
-        style={{ height: "44px", width: "312px", border: "2px" }}
-        className="apply-button"
-        // className="apply-button relative border-2  m-auto lg:w-40 lg:h-16 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 w-28 h-8 text-2xl p-0.5 mt-5 font-[BerlinSans] font-bold text-center z-30"
+        style={{
+          height: "44px",
+          width: "312px",
+          borderWidth: "2px",
+          // zIndex: "3",
+          margin: "auto",
+          marginTop: "20px",
+        }}
+        // className="apply-button"
+        className="apply-button relative border-2  m-auto lg:w-40 lg:h-16 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 w-28 h-8 text-2xl p-0.5 mt-5 font-[BerlinSans] font-bold text-center z-30"
       ></div>
 
       <div className="w-full"></div>
