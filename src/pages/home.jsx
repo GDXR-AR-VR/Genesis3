@@ -66,13 +66,15 @@ export default function Home() {
       >
         Register
       </motion.div>
-      <div className="w-full">
-        <div
-          className="apply-button h-20 w-60 m-auto"
-          data-hackathon-slug="genesis-iii"
-          data-button-theme="light"
-        ></div>
-      </div>
+      <div
+        data-hackathon-slug="genesis-iii"
+        data-button-theme="light"
+        style={{ height: "44px", width: "312px", border: "2px" }}
+        className="apply-button"
+        // className="apply-button relative border-2  m-auto lg:w-40 lg:h-16 xl:h-16 xl:p-4 lg:text-4xl lg:p-4 w-28 h-8 text-2xl p-0.5 mt-5 font-[BerlinSans] font-bold text-center z-30"
+      ></div>
+
+      <div className="w-full"></div>
       <div className="lg:h-16 z-10 font-[Pricedown]"></div>
       <div className="z-20  relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-2xl">
         COMMENCING IN
