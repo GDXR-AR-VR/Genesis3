@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import maidaan from "../assets/maidaan.svg";
 import ShapedButton from "../components/shapedButton";
 export default function SponsorStatement() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [currentIndex, setCurrentOpen] = useState(0);
   const optionArr = [
     { title: "Sponsor Us", link: "\\sponsorus" },
@@ -47,8 +47,8 @@ export default function SponsorStatement() {
   return (
     <>
       <div
-        id="faqs"
-        className="relative sponsors mb-40  select-none w-full flex-col bg-[#ECE8E1]  text-black imgSponsors justify-center items-center align-middle "
+        id="sponsorStatement"
+        className="relative sponsors mb-40  select-none w-full flex-col bg-[#ECE8E1] overflow-hidden text-black imgSponsors justify-center items-center align-middle "
       >
         <div className=""></div>
         <div className="font-[Montserrat] select-none font-bold text-5xl md:text-7xl lg:text-7xl text-center">
@@ -61,7 +61,7 @@ export default function SponsorStatement() {
             return (
               <>
                 <motion.div
-                  className="relative w-9/12 font-[BerlinSans] font-medium text-black text-2xl md:text-3xl lg:text-5xl p-3 lg:p-5 border-b-2 m-auto  border-black"
+                  className="relative w-10/12 xs:w-9/12 font-[BerlinSans] font-medium text-black text-2xl md:text-3xl lg:text-5xl p-3 lg:p-5 border-b-2 m-auto  border-black"
                   key={index}
                   onClick={() => {
                     console.log("clicked");
