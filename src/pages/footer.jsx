@@ -23,8 +23,22 @@ export default function Footer() {
         <div className="flex justify-evenly mt-10">
           <div className="w-1/3">
             <p className="text-2xl md:text-3xl underline">Venue</p>
-            <p>Army Institute of Technology</p>
-            <p>Pune, 411015</p>
+            <div className="w-full">
+              <motion.div
+                className="w-fit m-auto select-none"
+                whileTap={{ color: "red", scale: 1.1 }}
+                whileHover={{ scale: 1.1, color: "red" }}
+                onClick={() => {
+                  window.open(
+                    "https://maps.app.goo.gl/AcwusnMYcAe2QvSp7",
+                    "_blank"
+                  );
+                }}
+              >
+                <p>Army Institute of Technology</p>
+                <p>Pune, 411015</p>
+              </motion.div>
+            </div>
           </div>
           <div className=" w-1/3">
             <div className="text-2xl md:text-3xl underline mb-10">
