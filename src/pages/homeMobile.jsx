@@ -26,7 +26,6 @@ export default function HomeMobile() {
     };
   }, []);
 
-
   return (
     <>
       <div className="home relative    flex-col justify-center overflow-hidden w-screen items-center  align-middle  text-white text-center ">
@@ -63,11 +62,10 @@ export default function HomeMobile() {
               <p> Register</p>
             </div>
           </div>
-          
         </div>
         <div className=" z-10 font-[Pricedown]"></div>
         <div className="z-20 relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-xl">
-          COMMENCING IN
+          SUBMISSIONS IN
         </div>
         <CountdownTimer />
       </div>

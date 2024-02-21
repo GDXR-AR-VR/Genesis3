@@ -63,7 +63,7 @@ export default function Home() {
       <div className="w-full"></div>
       <div className="lg:h-16 z-10 font-[Pricedown]"></div>
       <div className="z-20  relative underline drop-shadow-[0_1.6px_1.6px_rgba(0,0,0,0.8)] font-[BerlinSans] text-2xl">
-        COMMENCING IN
+        SUBMISSIONS IN
       </div>
       <CountdownTimer />
     </div>
