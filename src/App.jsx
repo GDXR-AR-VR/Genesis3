@@ -19,6 +19,7 @@ import FooterMobile from "./pages/footerMobile";
 import { Suspense } from "react";
 import SponsorUs from "./pages/sponsorUs";
 import Memories_Phone from "./pages/memories-phone";
+import SponsorStatement from "./pages/sponsorStatement";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   useState(() => {
@@ -43,6 +44,7 @@ function App() {
                         <Prizes />
                         <Timeline />
                         <Sponsors />
+                        <SponsorStatement />
                         <Memories />
                         <Faqs />
                         <Footer />
@@ -56,6 +58,7 @@ function App() {
                         <PrizesMobile />
                         <TimelineMobile />
                         <SponsorsMobile />
+                        <SponsorStatement />
                         <Memories_Phone />
                         <Faqs />
                         <FooterMobile />
