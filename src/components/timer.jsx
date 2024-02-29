@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 const calculateTimeLeft = () => {
   let year = 2024;
-  let month = 2;
-  let day = 29;
+  let month = 3;
+  let day = 2;
 
   const difference = +new Date(`${year}-${month}-${day}`) - +new Date();
 
