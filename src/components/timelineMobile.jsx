@@ -3,10 +3,10 @@ const check = (num) => {
   const regStartDate = new Date("2024-02-07");
   const regEndDate = new Date("2024-02-21");
   const round1StartDate = new Date("2024-02-21");
-  const round1EndDate = new Date("2024-02-28");
+  const round1EndDate = new Date("2024-03-01");
   const round2StartDate = new Date("2024-03-09");
   const round2EndDate = new Date("2024-03-10");
-  const result1Date = new Date("2024-03-01");
+  const result1Date = new Date("2024-03-02");
   const result2Date = new Date("2024-03-10");
   let red = "";
   switch (num) {
@@ -81,7 +81,7 @@ export default function TimeLineMobileComponent() {
             ROUND 1 STARTS
           </p>
           <p className="text-white absolute xs:-left-8 -top-8  text-left  opacity-80">
-            28 FEB 2024
+            02 MAR 2024
           </p>
           <p className="text-white absolute -right-2 -top-10  text-left opacity-80">
             21 FEB 2024

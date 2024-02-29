@@ -3,10 +3,10 @@ export const check = (num) => {
   const regStartDate = new Date("2024-02-07");
   const regEndDate = new Date("2024-02-21");
   const round1StartDate = new Date("2024-02-21");
-  const round1EndDate = new Date("2024-02-28");
+  const round1EndDate = new Date("2024-03-01");
   const round2StartDate = new Date("2024-03-09");
   const round2EndDate = new Date("2024-03-10");
-  const result1Date = new Date("2024-03-01");
+  const result1Date = new Date("2024-03-02");
   const result2Date = new Date("2024-03-10");
   const red = "bg-red-500";
   const white = "bg-slate-100";
@@ -41,7 +41,7 @@ export default function TimelineComponent() {
           <p>Registration End</p>
         </div>
         <div className="head text-lg text-slate-300">
-          <p>01 Mar 2024</p>
+          <p>02 Mar 2024</p>
         </div>
         <div className="head text-xl text-red-500">
           <p>Round 2 Start</p>
@@ -74,7 +74,7 @@ export default function TimelineComponent() {
           <p>Round 1 Start</p>
         </div>
         <div className="head text-lg text-slate-300">
-          <p>28 Feb 2024</p>
+          <p>01 Mar 2024</p>
         </div>
         <div className="head text-xl text-red-500">
           <p>Round 1 Results</p>
