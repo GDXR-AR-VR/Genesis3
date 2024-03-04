@@ -14,7 +14,7 @@ const check = (num) => {
       red = "border-t-red-500";
       break;
     case 2:
-      red = "border-r-red-500 border-t-red-500";
+      red = "border-r-red-500 border-t-red-500 border-b-red-500";
       break;
     case 3:
       red = "border-t-red-500";

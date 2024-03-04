@@ -18,9 +18,9 @@ export const check = (num) => {
     case 2:
       return currentDate < round1EndDate ? white : red;
     case 3:
-      return currentDate < round2EndDate ? white : red;
-    case 4:
       return currentDate < result1Date ? white : red;
+    case 4:
+      return currentDate < round2StartDate ? white : red;
     case 5:
       return currentDate < result2Date ? white : red;
     default:
