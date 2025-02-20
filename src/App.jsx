@@ -43,7 +43,7 @@ function App() {
                         <About />
                         <Prizes />
                         <Timeline />
-                        <Sponsors />
+                        {/* <Sponsors /> */}
                         <SponsorStatement />
                         <Memories />
                         <Faqs />
@@ -57,7 +57,7 @@ function App() {
                         <AboutMobile />
                         <PrizesMobile />
                         <TimelineMobile />
-                        <SponsorsMobile />
+                        {/* <SponsorsMobile /> */}
                         <SponsorStatement />
                         <Memories_Phone />
                         <Faqs />

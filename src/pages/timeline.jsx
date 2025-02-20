@@ -55,7 +55,7 @@ export default function Timeline() {
           </div>
         </div>
         <div className="lg:h-10 xl:h-0"></div>
-        <TimelineComponent />
+        {/* <TimelineComponent /> */}
       </div>
     </>
   );

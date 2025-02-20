@@ -25,7 +25,7 @@ export default function TimelineMobile() {
             2022 Last Edition, this 2024 Genesis isn't just about pixels and
             coding; it's about bringing the spirit of gaming to life.
           </div>
-          <TimelineMobileComponent />
+          {/* <TimelineMobileComponent /> */}
         </div>
       </div>
     </>

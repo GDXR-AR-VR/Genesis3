@@ -14,7 +14,7 @@ export default function PrizesMobile() {
             <PrizeComponent
               color={"bg-yellow-400"}
               prize={1}
-              prizeAmount={"15,000"}
+              prizeAmount={"17,500"}
               width={"w-11/12"}
               height={"h-44"}
               text={"text-2xl 2xs:text-md md:text-3xl"}
@@ -45,7 +45,7 @@ export default function PrizesMobile() {
           <PrizeComponent
             color={"bg-gray-400"}
             prize={2}
-            prizeAmount={"12,500"}
+            prizeAmount={"15,000"}
             width={"w-[45%]"}
             height={"xs:h-44 h-36"}
             text={"text-lg md:text-2xl hidden custom:block"}
@@ -53,7 +53,7 @@ export default function PrizesMobile() {
           <PrizeComponent
             color={"bg-red-500"}
             prize={3}
-            prizeAmount={"10,000"}
+            prizeAmount={"12,500"}
             width={"w-[45%]"}
             height={"xs:h-44 h-36"}
             text={"text-lg md:text-2xl hidden custom:block"}

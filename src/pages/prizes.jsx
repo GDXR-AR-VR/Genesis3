@@ -50,7 +50,7 @@ export default function Prizes() {
               </div>
               <div className="m-auto h-5/6 w-1 bg-black"></div>
               <div className="text-white xl:text-7xl lg:text-5xl md:text-4xl m-auto drop-shadow-2xl flex-col">
-                Rs 15,000
+                Rs 17,500
                 <div className=" xl:text-2xl w-full text-center md:text-lg lg:text-xl font-light font-[BerlinSans] p-2">
                   Goodies and Certificate
                 </div>
@@ -64,7 +64,7 @@ export default function Prizes() {
                   </div>
                   <div className="m-auto w-11/12 flex-col items-center align-middle justify-center h-1 bg-black"></div>
                   <div className="text-white xl:text-5xl lg:text-5xl md:text-4xl  drop-shadow-2xl flex-col">
-                    Rs 12,500
+                    Rs 15,000
                     <div className=" xl:text-2xl md:text-lg lg:text-xl font-light font-[BerlinSans] p-2">
                       Goodies and Certificate
                     </div>
@@ -76,7 +76,7 @@ export default function Prizes() {
                   </p>
                   <div className="m-auto w-11/12  h-1 bg-black"></div>
                   <div className="text-white xl:text-5xl md:text-4xl lg:text-5xl drop-shadow-2xl flex-col">
-                    Rs 10,000
+                    Rs 12,500
                     <div className=" xl:text-2xl md:text-lg lg:text-xl font-light font-[BerlinSans] p-2">
                       Goodies and Certificate
                     </div>
